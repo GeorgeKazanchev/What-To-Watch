@@ -1,0 +1,38 @@
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const webpackConfig = {
+    entry: "./src/index.js",
+    output: {
+        filename: "bundle.js",
+        path: path.join(__dirname, "public")
+    },
+    devServer: {
+        static: path.join(__dirname, "public"),
+        open: true,
+        port: 44402,
+    },
+    module: {
+        rules: [
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                },
+            },
+            {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                use: ['style-loader', 'css-loader']
+            }
+        ],
+    },
+    devtool: "source-map",
+    mode: "production"
+};
+
+export default webpackConfig;
