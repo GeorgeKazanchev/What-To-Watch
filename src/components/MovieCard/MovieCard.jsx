@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MovieCardBackground } from './MovieCardBackground.jsx';
-import { Header } from './Header.jsx';
-import { MovieCardInfo } from './MovieCardInfo.jsx';
+import { MovieCardBackground } from '../MovieCardBackground/MovieCardBackground.jsx';
+import { Header } from '../Header/Header.jsx';
+import { MovieCardInfo } from '../MovieCardInfo/MovieCardInfo.jsx';
 
 export function MovieCard({background, userAvatar, movieInfo}) {
     return (

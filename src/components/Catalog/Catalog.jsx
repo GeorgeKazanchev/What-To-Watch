@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { GenresList } from './GenresList.jsx';
-import { MoviesList } from './MoviesList.jsx';
+import { GenresList } from '../GenresList/GenresList.jsx';
+import { MoviesList } from '../MoviesList/MoviesList.jsx';
 
 export function Catalog({genresList, moviesList}) {
     return (

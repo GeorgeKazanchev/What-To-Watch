@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MovieCardPoster } from './MovieCardPoster.jsx';
-import { MovieCardDescription } from './MovieCardDescription.jsx';
+import { MovieCardPoster } from '../MovieCardPoster/MovieCardPoster.jsx';
+import { MovieCardDescription } from '../MovieCardDescription/MovieCardDescription.jsx';
 
 export function MovieCardInfo({movieInfo}) {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Logo } from './Logo.jsx';
-import { UserBlock } from './UserBlock.jsx';
+import { Logo } from '../Logo/Logo.jsx';
+import { UserBlock } from '../UserBlock/UserBlock.jsx';
 
 export function Header({userAvatar}) {
     return (

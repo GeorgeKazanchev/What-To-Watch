@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Catalog } from './Catalog.jsx';
-import { Footer } from './Footer.jsx';
-import { MovieCard } from './MovieCard.jsx';
+import { Catalog } from '../Catalog/Catalog.jsx';
+import { Footer } from '../Footer/Footer.jsx';
+import { MovieCard } from '../MovieCard/MovieCard.jsx';
 
 export function MainPageContent({background, userAvatar, movieInfo, genresList, moviesList}) {
     return (

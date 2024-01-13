@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MainPageContent } from './MainPageContent.jsx';
+import { MainPageContent } from '../MainPageContent/MainPageContent.jsx';
 
 export function Layout({background, userAvatar, movieInfo, genresList, moviesList}) {
     return (

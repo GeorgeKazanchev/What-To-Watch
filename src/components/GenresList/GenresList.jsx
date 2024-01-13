@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Genre } from './Genre.jsx';
+import { Genre } from '../Genre/Genre.jsx';
 
 export function GenresList({genresList}) {
     const genres = genresList.map((genre) => <Genre name={genre.name} href={genre.href} isActive={genre.isActive}

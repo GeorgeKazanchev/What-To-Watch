@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MovieCardButtons } from './MovieCardButtons.jsx';
+import { MovieCardButtons } from '../MovieCardButtons/MovieCardButtons.jsx';
 
 export function MovieCardDescription({title, genre, year}) {
     return (
