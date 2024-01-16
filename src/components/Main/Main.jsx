@@ -4,7 +4,7 @@ import { Catalog } from '../Catalog/Catalog.jsx';
 import { Footer } from '../Footer/Footer.jsx';
 import { MovieCard } from '../MovieCard/MovieCard.jsx';
 
-export function MainPageContent({background, userAvatar, movieInfo, genresList, moviesList}) {
+export function Main({background, userAvatar, movieInfo, genresList, moviesList}) {
     return (
         <div className="page-content">
             <MovieCard background={background} userAvatar={userAvatar} movieInfo={movieInfo}/>
@@ -14,7 +14,7 @@ export function MainPageContent({background, userAvatar, movieInfo, genresList, 
     );
 }
 
-MainPageContent.propTypes = {
+Main.propTypes = {
     background: PropTypes.object,
     userAvatar: PropTypes.object,
     movieInfo: PropTypes.object,
