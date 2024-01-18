@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export function SmallMovieCard({poster, title, onMovieClick}) {
+export function SmallMovieCard({poster, title, onMovieClick, onMovieHover}) {
     return (
-        <article className="small-movie-card catalog__movies-card" onClick={onMovieClick}>
+        <article className="small-movie-card catalog__movies-card" onClick={onMovieClick} onMouseOver={onMovieHover}>
             <div className="small-movie-card__image">
                 <img src={poster} alt={title} width="280" height="175" />
             </div>
@@ -17,5 +17,6 @@ export function SmallMovieCard({poster, title, onMovieClick}) {
 SmallMovieCard.propTypes = {
     poster: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    onMovieClick: PropTypes.func.isRequired
+    onMovieClick: PropTypes.func.isRequired,
+    onMovieHover: PropTypes.func.isRequired
 };
