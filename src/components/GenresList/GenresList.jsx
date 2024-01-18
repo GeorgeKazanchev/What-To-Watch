@@ -2,17 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Genre } from '../Genre/Genre.jsx';
 
-export function GenresList({genresList}) {
-    const genres = genresList.map((genre) => <Genre name={genre.name} href={genre.href} isActive={genre.isActive}
-        key={genre.id}/>);
+export function GenresList({genres}) {
+    const genresList = genres.map((genre) => 
+        <Genre 
+            key={genre.id}
+            name={genre.name}
+            isActive={false}/>);
     
     return (
         <ul className="catalog__genres-list">
-            {genres}
+            {genresList}
         </ul>
     );
 }
 
 GenresList.propTypes = {
-    genresList: PropTypes.string
+    genres: PropTypes.array.isRequired
 };

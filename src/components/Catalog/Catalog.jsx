@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { GenresList } from '../GenresList/GenresList.jsx';
 import { MoviesList } from '../MoviesList/MoviesList.jsx';
 
-export function Catalog({genresList, moviesList}) {
+export function Catalog({genres, movies, onMovieClick}) {
     return (
         <section className="catalog">
             <h2 className="catalog__title visually-hidden">Catalog</h2>
-            <GenresList genresList={genresList} />
-            <MoviesList moviesList={moviesList} />
+            <GenresList genres={genres} />
+            <MoviesList movies={movies} onMovieClick={onMovieClick}/>
             <div className="catalog__more">
                 <button className="catalog__button" type="button">Show more</button>
             </div>
@@ -17,6 +17,7 @@ export function Catalog({genresList, moviesList}) {
 }
 
 Catalog.propTypes = {
-    genresList: PropTypes.array,
-    moviesList: PropTypes.array
+    genres: PropTypes.array.isRequired,
+    movies: PropTypes.array.isRequired,
+    onMovieClick: PropTypes.func.isRequired
 };

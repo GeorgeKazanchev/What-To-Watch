@@ -1,24 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MovieCardBackground } from '../MovieCardBackground/MovieCardBackground.jsx';
 import { Header } from '../Header/Header.jsx';
-import { MovieCardInfo } from '../MovieCardInfo/MovieCardInfo.jsx';
+import { MovieCardDescription } from '../MovieCardDescription/MovieCardDescription.jsx';
 
-export function MovieCard({background, userAvatar, movieInfo}) {
+export function MovieCard({movie, userAvatar}) {
     return (
         <section className="movie-card">
-            <MovieCardBackground background={background}/>
+            <div className="movie-card__bg">
+                <img src={movie.background} alt={movie.title} />
+            </div>
             <h1 className="visually-hidden">WTW</h1>
             <Header userAvatar={userAvatar}/>
             <div className="movie-card__wrap">
-                <MovieCardInfo movieInfo={movieInfo}/>
+                <div className="movie-card__info">
+                    <div className="movie-card__poster">
+                        <img src={movie.poster} alt={movie.title} width="218" height="327" />
+                    </div>
+                    <MovieCardDescription title={movie.title} genre={movie.genre} year={movie.year}/>
+                </div>
             </div>
         </section>
     );
 }
 
 MovieCard.propTypes = {
-    background: PropTypes.object,
-    userAvatar: PropTypes.object,
-    movieInfo: PropTypes.object
+    movie: PropTypes.object.isRequired,
+    userAvatar: PropTypes.object.isRequired
 };

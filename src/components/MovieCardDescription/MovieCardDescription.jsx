@@ -5,9 +5,9 @@ import { MovieCardButtons } from '../MovieCardButtons/MovieCardButtons.jsx';
 export function MovieCardDescription({title, genre, year}) {
     return (
         <div className="movie-card__desc">
-            <h2 className="movie-card__title">{title.text}</h2>
+            <h2 className="movie-card__title">{title}</h2>
             <p className="movie-card__meta">
-                <span className="movie-card__genre">{genre.name}</span>
+                <span className="movie-card__genre">{genre}</span>
                 <span className="movie-card__year">{year}</span>
             </p>
             <MovieCardButtons />
@@ -16,7 +16,7 @@ export function MovieCardDescription({title, genre, year}) {
 }
 
 MovieCardDescription.propTypes = {
-    title: PropTypes.object,
-    genre: PropTypes.object,
-    year: PropTypes.number
+    title: PropTypes.string.isRequired,
+    genre: PropTypes.string.isRequired,
+    year: PropTypes.number.isRequired
 };

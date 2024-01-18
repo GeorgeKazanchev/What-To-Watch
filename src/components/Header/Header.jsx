@@ -13,5 +13,5 @@ export function Header({userAvatar}) {
 }
 
 Header.propTypes = {
-    userAvatar: PropTypes.object
+    userAvatar: PropTypes.object.isRequired
 };

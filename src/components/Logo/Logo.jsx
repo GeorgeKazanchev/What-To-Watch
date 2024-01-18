@@ -16,5 +16,5 @@ export function Logo({isLight}) {
 }
 
 Logo.propTypes = {
-    isLight: PropTypes.bool
+    isLight: PropTypes.bool.isRequired
 };
