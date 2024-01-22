@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer.jsx';
 
 export default function Main({promoMovie, userAvatar, genres, movies, onMovieClick}) {
     return (
-        <div className="page-content">
+        <div className='page-content'>
             <MovieCard movie={promoMovie} userAvatar={userAvatar}/>
             <Catalog genres={genres} movies={movies} onMovieClick={onMovieClick}/>
             <Footer />

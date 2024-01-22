@@ -10,7 +10,7 @@ export default function GenresList({genres}) {
             isActive={false}/>);
     
     return (
-        <ul className="catalog__genres-list">
+        <ul className='catalog__genres-list'>
             {genresList}
         </ul>
     );

@@ -15,7 +15,7 @@ export default function MoviesList({movies, onMovieClick}) {
             }}/>);
 
     return (
-        <div className="catalog__movies-list">
+        <div className='catalog__movies-list'>
             {moviesList}
         </div>
     );
