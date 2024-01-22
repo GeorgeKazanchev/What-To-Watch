@@ -14,7 +14,13 @@ export default function SmallMovieCard({movie, onMovieClick, onMovieHover}) {
     return (
         <article
             className='small-movie-card catalog__movies-card disable-text-selection'
-            onMouseOver={onMovieHover}>
+            onMouseOver={() => {
+                setIsPlaying(true);
+                onMovieHover();
+            }}
+            onMouseLeave={() => {
+                setIsPlaying(false);
+            }}>
             <div 
                 className='small-movie-card__image'
                 onClick={handleMovieClick}>
