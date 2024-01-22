@@ -14,6 +14,9 @@ const webpackConfig = {
         static: path.join(__dirname, "public"),
         open: true,
         port: 44402,
+        historyApiFallback: {
+            index: '/'
+        }
     },
     module: {
         rules: [
