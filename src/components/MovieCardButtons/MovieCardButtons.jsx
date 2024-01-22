@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function MovieCardButtons() {
+export default function MovieCardButtons() {
     return (
         <div className="movie-card__buttons">
             <button className="btn btn--play movie-card__button" type="button">

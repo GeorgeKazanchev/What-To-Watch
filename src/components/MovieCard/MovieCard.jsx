@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Header } from '../Header/Header.jsx';
-import { MovieCardDescription } from '../MovieCardDescription/MovieCardDescription.jsx';
+import Header from '../Header/Header.jsx';
+import MovieCardDescription from '../MovieCardDescription/MovieCardDescription.jsx';
 
-export function MovieCard({movie, userAvatar}) {
+export default function MovieCard({movie, userAvatar}) {
     return (
         <section className="movie-card disable-text-selection">
             <div className="movie-card__bg">

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export function Logo({isLight}) {
+export default function Logo({isLight}) {
     const className = `logo__link ${isLight ? "logo__link--light" : ""}`;
     
     return (

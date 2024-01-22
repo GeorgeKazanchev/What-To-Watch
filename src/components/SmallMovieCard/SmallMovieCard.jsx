@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export function SmallMovieCard({movie, onMovieClick, onMovieHover}) {
+export default function SmallMovieCard({movie, onMovieClick, onMovieHover}) {
     const handleMovieClick = (evt) => {
         evt.preventDefault();
         onMovieClick(movie);

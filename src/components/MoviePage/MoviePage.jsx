@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SmallMovieCard } from '../SmallMovieCard/SmallMovieCard.jsx';
-import { Header } from '../Header/Header.jsx';
-import { MovieCardButtons } from '../MovieCardButtons/MovieCardButtons.jsx';
-import { MoviePageNavigation } from '../MoviePageNavigation/MoviePageNavigation.jsx';
-import { Footer } from '../Footer/Footer.jsx';
+import SmallMovieCard from '../SmallMovieCard/SmallMovieCard.jsx';
+import Header from '../Header/Header.jsx';
+import MovieCardButtons from '../MovieCardButtons/MovieCardButtons.jsx';
+import MoviePageNavigation from '../MoviePageNavigation/MoviePageNavigation.jsx';
+import Footer from '../Footer/Footer.jsx';
 
 export default function MoviePage({ movie, userAvatar, similarMovies, onMovieClick }) {
     const similarMoviesList = similarMovies.map((movie) =>

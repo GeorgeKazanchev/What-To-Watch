@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export function Genre({name, isActive}) {
+export default function Genre({name, isActive}) {
     const className = `catalog__genres-item ${isActive ? "catalog__genres-item--active" : ""}`;
     
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function MoviePageNavigation() {
+export default function MoviePageNavigation() {
     return (
         <nav className="movie-nav movie-card__nav">
             <ul className="movie-nav__list">

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SmallMovieCard } from '../SmallMovieCard/SmallMovieCard.jsx';
+import SmallMovieCard from '../SmallMovieCard/SmallMovieCard.jsx';
 
-export function MoviesList({movies, onMovieClick}) {
+export default function MoviesList({movies, onMovieClick}) {
     const [currentMovie, setCurrentMovie] = React.useState(null);
     
     const moviesList = movies.map((movie) =>

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Catalog } from '../Catalog/Catalog.jsx';
-import { Footer } from '../Footer/Footer.jsx';
-import { MovieCard } from '../MovieCard/MovieCard.jsx';
+import MovieCard from '../MovieCard/MovieCard.jsx';
+import Catalog from '../Catalog/Catalog.jsx';
+import Footer from '../Footer/Footer.jsx';
 
-export function Main({promoMovie, userAvatar, genres, movies, onMovieClick}) {
+export default function Main({promoMovie, userAvatar, genres, movies, onMovieClick}) {
     return (
         <div className="page-content">
             <MovieCard movie={promoMovie} userAvatar={userAvatar}/>

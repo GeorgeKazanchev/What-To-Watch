@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Genre } from '../Genre/Genre.jsx';
+import Genre from '../Genre/Genre.jsx';
 
-export function GenresList({genres}) {
+export default function GenresList({genres}) {
     const genresList = genres.map((genre) => 
         <Genre 
             key={genre.id}

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Logo } from '../Logo/Logo.jsx';
+import Logo from '../Logo/Logo.jsx';
 
-export function Footer() {
+export default function Footer() {
     return (
         <footer className="page-footer">
             <Logo isLight={true}/>

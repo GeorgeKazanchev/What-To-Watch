@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MovieCardButtons } from '../MovieCardButtons/MovieCardButtons.jsx';
+import MovieCardButtons from '../MovieCardButtons/MovieCardButtons.jsx';
 
-export function MovieCardDescription({title, genres, year}) {
+export default function MovieCardDescription({title, genres, year}) {
     return (
         <div className="movie-card__desc">
             <h2 className="movie-card__title">{title}</h2>

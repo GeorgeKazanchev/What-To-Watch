@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export function UserBlock({avatar}) {
+export default function UserBlock({avatar}) {
     return (
         <div className="user-block">
             <div className="user-block__avatar">
