@@ -5,7 +5,7 @@ import { UserBlock } from '../UserBlock/UserBlock.jsx';
 
 export function Header({userAvatar}) {
     return (
-        <header className="page-header movie-card__head">
+        <header className="page-header movie-card__head disable-text-selection">
             <Logo isLight={false}/>
             <UserBlock avatar={userAvatar}/>
         </header>

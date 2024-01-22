@@ -5,7 +5,7 @@ import { MovieCardDescription } from '../MovieCardDescription/MovieCardDescripti
 
 export function MovieCard({movie, userAvatar}) {
     return (
-        <section className="movie-card">
+        <section className="movie-card disable-text-selection">
             <div className="movie-card__bg">
                 <img src={movie.background} alt={movie.title} />
             </div>
@@ -14,9 +14,9 @@ export function MovieCard({movie, userAvatar}) {
             <div className="movie-card__wrap">
                 <div className="movie-card__info">
                     <div className="movie-card__poster">
-                        <img src={movie.poster} alt={movie.title} width="218" height="327" />
+                        <img src={movie.poster} alt={movie.title} width="218" height="327" draggable="false"/>
                     </div>
-                    <MovieCardDescription title={movie.title} genre={movie.genre} year={movie.year}/>
+                    <MovieCardDescription title={movie.title} genres={movie.genres} year={movie.year}/>
                 </div>
             </div>
         </section>

@@ -6,7 +6,7 @@ export function Genre({name, isActive}) {
     
     return (
         <li className={className}>
-            <a href='#' className="catalog__genres-link">{name}</a>
+            <a href='#' className="catalog__genres-link" draggable="false">{name}</a>
         </li>
     );
 }

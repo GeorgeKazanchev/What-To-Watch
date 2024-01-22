@@ -5,7 +5,7 @@ export function UserBlock({avatar}) {
     return (
         <div className="user-block">
             <div className="user-block__avatar">
-                <img src={avatar.src} alt={avatar.description} width="63" height="63" />
+                <img src={avatar.src} alt={avatar.description} width="63" height="63" draggable="false"/>
             </div>
         </div>
     );

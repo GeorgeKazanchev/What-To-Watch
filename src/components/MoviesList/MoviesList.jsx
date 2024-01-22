@@ -8,8 +8,7 @@ export function MoviesList({movies, onMovieClick}) {
     const moviesList = movies.map((movie) =>
         <SmallMovieCard 
             key={movie.id}
-            poster={movie.poster} 
-            title={movie.title}
+            movie={movie}
             onMovieClick={onMovieClick}
             onMovieHover={() => {
                 setCurrentMovie(movie);
