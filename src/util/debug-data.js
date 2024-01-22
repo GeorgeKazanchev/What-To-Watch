@@ -14,7 +14,13 @@ export const promoMovie = {
     reviewsCount: 1105,
     directors: ['Wes Anderson'],
     starring: ['Ralph Fiennes', 'F. Murray Abraham', 'Mathieu Amalric', 'Adrien Brody',
-    'Willem Dafoe', 'Jeff Goldblum']
+    'Willem Dafoe', 'Jeff Goldblum'],
+    previews: [
+        {
+            path: '/video/preview-the-grand-budapest-hotel.mp4',
+            type: 'video/mp4'
+        }
+    ]
 }
 
 export const userAvatar = {
@@ -84,7 +90,13 @@ export const movies = [
         ratingDescription: 'Good',
         reviewsCount: 1644,
         directors: ['David Yates'],
-        starring: ['Eddie Redmayne', 'Katherine Waterston', 'Dan Fogler']
+        starring: ['Eddie Redmayne', 'Katherine Waterston', 'Dan Fogler'],
+        previews: [
+            {
+                path: '/video/preview-fantastic-beasts-the-crimes-of-grindelwald.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: '21a02b6b-8514-4610-bac0-05a8b221caac',
@@ -100,7 +112,13 @@ export const movies = [
         ratingDescription: 'Bad',
         reviewsCount: 3565,
         directors: ['Bryan Singer'],
-        starring: ['Rami Malek', 'Lucy Boynton', 'Gwilym Lee']
+        starring: ['Rami Malek', 'Lucy Boynton', 'Gwilym Lee'],
+        previews: [
+            {
+                path: '/video/preview-bohemian-rhapsody.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: '3d7eca72-86ad-47d2-9e01-8ee344165ddb',
@@ -117,7 +135,13 @@ export const movies = [
         ratingDescription: 'Good',
         reviewsCount: 280,
         directors: ['Justin Kurzel'],
-        starring: ['Michael Fassbender', 'Marion Cotillard', 'Jack Madigan']
+        starring: ['Michael Fassbender', 'Marion Cotillard', 'Jack Madigan'],
+        previews: [
+            {
+                path: '/video/preview-macbeth.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: '171b0631-3e71-412a-85a4-93902db872e2',
@@ -133,7 +157,13 @@ export const movies = [
         ratingDescription: 'Excellent',
         reviewsCount: 907,
         directors: ['Martin Scorsese'],
-        starring: ['Leonardo DiCaprio', 'Cate Blanchett', 'Kate Beckinsale']
+        starring: ['Leonardo DiCaprio', 'Cate Blanchett', 'Kate Beckinsale'],
+        previews: [
+            {
+                path: '/video/preview-aviator.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: '995f7661-cee5-414e-990b-9d040dc53b3b',
@@ -150,7 +180,13 @@ export const movies = [
         ratingDescription: 'Good',
         reviewsCount: 522,
         directors: ['Lynne Ramsay'],
-        starring: ['Tilda Swinton', 'John C. Reilly', 'Ezra Miller']
+        starring: ['Tilda Swinton', 'John C. Reilly', 'Ezra Miller'],
+        previews: [
+            {
+                path: '/video/preview-we-need-to-talk-about-kevin.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: '14ab58c6-ecbd-4999-b1c5-e344b04cef03',
@@ -165,7 +201,13 @@ export const movies = [
         ratingDescription: 'Рейтинг отсутствует',
         reviewsCount: 492,
         directors: ['Jemaine Clement'],
-        starring: ['Kayvan Novak', 'Matt Berry', 'Natasia Demetriou']
+        starring: ['Kayvan Novak', 'Matt Berry', 'Natasia Demetriou'],
+        previews: [
+            {
+                path: '/video/preview-what-we-do-in-the-shadows.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: 'a3cf4dcf-54be-489e-b672-ed2e3115e282',
@@ -181,7 +223,13 @@ export const movies = [
         ratingDescription: 'Excellent',
         reviewsCount: 1872,
         directors: ['Alejandro G. Iñárritu'],
-        starring: ['Leonardo DiCaprio', 'Tom Hardy', 'Will Poulter']
+        starring: ['Leonardo DiCaprio', 'Tom Hardy', 'Will Poulter'],
+        previews: [
+            {
+                path: '/video/preview-revenant.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: 'c95500c5-ef15-46fb-ad32-fbabb56d2e5e',
@@ -197,7 +245,13 @@ export const movies = [
         ratingDescription: 'Good',
         reviewsCount: 1649,
         directors: ['Martin Scorsese'],
-        starring: ['Leonardo DiCaprio', 'Emily Mortimer', 'Mark Ruffalo']
+        starring: ['Leonardo DiCaprio', 'Emily Mortimer', 'Mark Ruffalo'],
+        previews: [
+            {
+                path: '/video/preview-shutter-island.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: 'a8eaa946-034a-4e8a-a969-63a07f82d8d6',
@@ -213,7 +267,13 @@ export const movies = [
         ratingDescription: 'Masterpiece',
         reviewsCount: 3664,
         directors: ['Quentin Tarantino'],
-        starring: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson']
+        starring: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson'],
+        previews: [
+            {
+                path: '/video/preview-pulp-fiction.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: '8e6cbe9d-1925-4081-955c-bd1c83b45ef6',
@@ -230,7 +290,13 @@ export const movies = [
         ratingDescription: 'Excellent',
         reviewsCount: 2143,
         directors: ['Ethan Coen', 'Joel Coen'],
-        starring: ['Tommy Lee Jones', 'Javier Bardem', 'Josh Brolin']
+        starring: ['Tommy Lee Jones', 'Javier Bardem', 'Josh Brolin'],
+        previews: [
+            {
+                path: '/video/preview-no-country-for-old-men.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: '179a4b8f-5d75-4e1c-8393-61215ad4f421',
@@ -246,7 +312,13 @@ export const movies = [
         ratingDescription: 'Good',
         reviewsCount: 3002,
         directors: ['Steven Spielberg'],
-        starring: ['Tom Cruise', 'Dakota Fanning', 'Tim Robbins']
+        starring: ['Tom Cruise', 'Dakota Fanning', 'Tim Robbins'],
+        previews: [
+            {
+                path: '/video/preview-war-of-the-worlds.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: '868a2461-2081-4da3-b586-0262dbc8c94a',
@@ -262,7 +334,13 @@ export const movies = [
         ratingDescription: 'Good',
         reviewsCount: 352,
         directors: ['Peter Howitt'],
-        starring: ['Rowan Atkinson', 'John Malkovich', 'Natalie Imbruglia']
+        starring: ['Rowan Atkinson', 'John Malkovich', 'Natalie Imbruglia'],
+        previews: [
+            {
+                path: '/video/preview-johnny-english.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: 'ecc57abe-684e-43d1-a754-7c6596686ffe',
@@ -278,7 +356,13 @@ export const movies = [
         ratingDescription: 'Good',
         reviewsCount: 945,
         directors: ['Guy Ritchie'],
-        starring: ['Jason Statham', 'Brad Pitt', 'Stephen Graham']
+        starring: ['Jason Statham', 'Brad Pitt', 'Stephen Graham'],
+        previews: [
+            {
+                path: '/video/preview-snatch.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: '3adc0faa-6c83-4490-bb8c-373fff32c456',
@@ -294,7 +378,13 @@ export const movies = [
         ratingDescription: 'Excellent',
         reviewsCount: 510,
         directors: ['Wes Anderson'],
-        starring: ['Jared Gilman', 'Kara Hayward', 'Bruce Willis']
+        starring: ['Jared Gilman', 'Kara Hayward', 'Bruce Willis'],
+        previews: [
+            {
+                path: '/video/preview-moonrise-kingdom.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: '7a9da465-9f8a-402d-ac4c-6fd0ffd2ab47',
@@ -310,7 +400,13 @@ export const movies = [
         ratingDescription: 'Good',
         reviewsCount: 191,
         directors: ['Jean-Jacques Annaud'],
-        starring: ['Brad Pitt', 'David Thewlis', 'BD Wong']
+        starring: ['Brad Pitt', 'David Thewlis', 'BD Wong'],
+        previews: [
+            {
+                path: '/video/preview-seven-years-in-tibet.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: 'bbc28343-e273-4db5-b6a6-db19864c5a13',
@@ -326,7 +422,13 @@ export const movies = [
         ratingDescription: 'Excellent',
         reviewsCount: 340,
         directors: ['Jeff Nichols'],
-        starring: ['Michael Shannon', 'Joel Edgerton', 'Kirsten Dunst']
+        starring: ['Michael Shannon', 'Joel Edgerton', 'Kirsten Dunst'],
+        previews: [
+            {
+                path: '/video/preview-midnight-special.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: 'f74819d9-300e-4323-a48a-762a9f99f9f8',
@@ -342,7 +444,13 @@ export const movies = [
         ratingDescription: 'Good',
         reviewsCount: 361,
         directors: ['Wes Anderson'],
-        starring: ['Owen Wilson', 'Adrien Brody', 'Jason Schwartzman']
+        starring: ['Owen Wilson', 'Adrien Brody', 'Jason Schwartzman'],
+        previews: [
+            {
+                path: '/video/preview-dardjeeling-limited.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: 'f15b0001-beea-435a-b4b7-6d20df54d228',
@@ -358,7 +466,13 @@ export const movies = [
         ratingDescription: 'Excellent',
         reviewsCount: 102,
         directors: ['Sally Potter'],
-        starring: ['Tilda Swinton', 'Billy Zane', 'Quentin Crisp']
+        starring: ['Tilda Swinton', 'Billy Zane', 'Quentin Crisp'],
+        previews: [
+            {
+                path: '/video/preview-orlando.mp4',
+                type: 'video/mp4'
+            }
+        ]
     },
     {
         id: 'cf28f87b-59b9-477f-bca8-a5d3b40db2c8',
@@ -374,7 +488,13 @@ export const movies = [
         ratingDescription: 'Рейтинг отсутствует',
         reviewsCount: 988,
         directors: ['Joe Penhall'],
-        starring: ['Jonathan Groff', 'Holt McCallany', 'Anna Torv']
+        starring: ['Jonathan Groff', 'Holt McCallany', 'Anna Torv'],
+        previews: [
+            {
+                path: '/video/preview-mindhunter.mp4',
+                type: 'video/mp4'
+            }
+        ]
     }
 ];
 
