@@ -497,5 +497,3 @@ export const movies = [
         ]
     }
 ];
-
-export const similarMovies = movies.slice(0, 4);

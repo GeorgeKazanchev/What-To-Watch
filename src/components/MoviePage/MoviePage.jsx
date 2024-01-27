@@ -1,20 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SmallMovieCard from '../SmallMovieCard/SmallMovieCard.jsx';
 import Header from '../Header/Header.jsx';
 import MovieCardButtons from '../MovieCardButtons/MovieCardButtons.jsx';
 import MoviePageNavigation from '../MoviePageNavigation/MoviePageNavigation.jsx';
 import Footer from '../Footer/Footer.jsx';
+import SimilarMovies from '../SimilarMovies/SimilarMovies.jsx';
 
-export default function MoviePage({ movie, userAvatar, similarMovies, onMovieClick }) {
-    const similarMoviesList = similarMovies.map((movie) =>
-        <SmallMovieCard 
-            key={movie.id}
-            movie={movie}
-            onMovieClick={onMovieClick}
-            onMovieHover={() => {}}/>
-    );
-
+export default function MoviePage({ movie, userAvatar, movies, onMovieClick }) {
     const directorsLabel = movie.directors.length > 1 ? 'Directors' : 'Director'; 
 
     return (
@@ -63,12 +55,10 @@ export default function MoviePage({ movie, userAvatar, similarMovies, onMovieCli
             </section>
 
             <div className='page-content'>
-                <section className='catalog catalog--like-this'>
-                    <h2 className='catalog__title'>More like this</h2>
-                    <div className='catalog__movies-list'>
-                        {similarMoviesList}
-                    </div>
-                </section>
+                <SimilarMovies
+                    movies={movies}
+                    currentMovie={movie}
+                    onSimilarMovieClick={onMovieClick}/>
                 <Footer />
             </div>
         </React.Fragment>

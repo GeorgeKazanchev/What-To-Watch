@@ -3,7 +3,7 @@ import Main from '../Main/Main.jsx';
 import MoviePage from '../MoviePage/MoviePage.jsx';
 import NotFound from '../NotFound/NotFound.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { promoMovie, userAvatar, genres, movies, similarMovies } from '../../util/debug-data.js';
+import { promoMovie, userAvatar, genres, movies } from '../../util/debug-data.js';
 import { AppRoute } from '../../util/settings.js';
 import '../../css/main.css';
 
@@ -32,7 +32,7 @@ export default function App() {
                     <MoviePage 
                         movie={currentMovie}
                         userAvatar={userAvatar}
-                        similarMovies={similarMovies}
+                        movies={movies}
                         onMovieClick={handleMovieClick}/>
                 );
             default:
