@@ -1,10 +1,11 @@
 export const promoMovie = {
     id: '2db2bca2-06ec-491d-a2e8-7e0c26d03c9a',
     title: 'The Grand Budapest Hotel',
+    runTime: '1h 39m',
     genres: ['Adventure', 'Comedy', 'Crime'],
     year: '2014',
-    background: './img/bg-the-grand-budapest-hotel.jpg',
-    poster: './img/the-grand-budapest-hotel-poster.jpg',
+    background: '/img/bg-the-grand-budapest-hotel.jpg',
+    poster: '/img/the-grand-budapest-hotel-poster.jpg',
     pagePoster: '',
     description: 'A writer encounters the owner of an aging high-class hotel,' + 
     ' who tells him of his early years serving as a lobby boy in the hotel\'s' + 
@@ -79,6 +80,7 @@ export const movies = [
     {
         id: '3e3e4556-ca17-4a12-95f4-f0006c3a27d5',
         title: 'Fantastic Beasts: The Crimes of Grindelwald',
+        runTime: '2h 14m',
         genres: ['Adventure', 'Family', 'Fantasy'],
         year: '2018',
         background: '/img/bg-fantastic-beasts-the-crimes-of-grindelwald.jpg',
@@ -101,6 +103,7 @@ export const movies = [
     {
         id: '21a02b6b-8514-4610-bac0-05a8b221caac',
         title: 'Bohemian Rhapsody',
+        runTime: '2h 14m',
         genres: ['Drama', 'Biography', 'Music'],
         year: '2018',
         background: '/img/bg-bohemian-rhapsody.jpg',
@@ -123,6 +126,7 @@ export const movies = [
     {
         id: '3d7eca72-86ad-47d2-9e01-8ee344165ddb',
         title: 'Macbeth',
+        runTime: '1h 53m',
         genres: ['Drama', 'History', 'War'],
         year: '2015',
         background: '/img/bg-macbeth.jpg',
@@ -146,6 +150,7 @@ export const movies = [
     {
         id: '171b0631-3e71-412a-85a4-93902db872e2',
         title: 'The Aviator',
+        runTime: '2h 50m',
         genres: ['Drama', 'Biography'],
         year: '2004',
         background: '/img/bg-aviator.jpg',
@@ -168,6 +173,7 @@ export const movies = [
     {
         id: '995f7661-cee5-414e-990b-9d040dc53b3b',
         title: 'We Need to Talk About Kevin',
+        runTime: '1h 52m',
         genres: ['Drama', 'Mystery', 'Thriller'],
         year: '2011',
         background: '/img/bg-we-need-to-talk-about-kevin.jpg',
@@ -191,6 +197,7 @@ export const movies = [
     {
         id: '14ab58c6-ecbd-4999-b1c5-e344b04cef03',
         title: 'What We Do in the Shadows',
+        runTime: '30m / episode',
         genres: ['Comedy', 'Fantasy', 'Horror'],
         year: '2019-2024',
         background: '/img/bg-what-we-do-in-the-shadows.jpg',
@@ -212,6 +219,7 @@ export const movies = [
     {
         id: 'a3cf4dcf-54be-489e-b672-ed2e3115e282',
         title: 'The Revenant',
+        runTime: '2h 36m',
         genres: ['Drama', 'Action', 'Drama'],
         year: '2015',
         background: '/img/bg-revenant.jpg',
@@ -234,6 +242,7 @@ export const movies = [
     {
         id: 'c95500c5-ef15-46fb-ad32-fbabb56d2e5e',
         title: 'Shutter Island',
+        runTime: '2h 18m',
         genres: ['Thriller', 'Mystery'],
         year: '2010',
         background: '/img/bg-shutter-island.jpg',
@@ -256,6 +265,7 @@ export const movies = [
     {
         id: 'a8eaa946-034a-4e8a-a969-63a07f82d8d6',
         title: 'Pulp Fiction',
+        runTime: '2h 34m',
         genres: ['Drama', 'Crime'],
         year: '1994',
         background: '/img/bg-pulp-fiction.jpg',
@@ -278,6 +288,7 @@ export const movies = [
     {
         id: '8e6cbe9d-1925-4081-955c-bd1c83b45ef6',
         title: 'No Country for Old Men',
+        runTime: '2h 2m',
         genres: ['Thriller', 'Crime', 'Drama'],
         year: '2007',
         background: '/img/bg-no-country-for-old-men.jpg',
@@ -301,6 +312,7 @@ export const movies = [
     {
         id: '179a4b8f-5d75-4e1c-8393-61215ad4f421',
         title: 'War of the Worlds',
+        runTime: '1h 56m',
         genres: ['Sci-Fi', 'Action', 'Adventure'],
         year: '2005',
         background: '/img/bg-war-of-the-worlds.jpg',
@@ -323,6 +335,7 @@ export const movies = [
     {
         id: '868a2461-2081-4da3-b586-0262dbc8c94a',
         title: 'Johnny English',
+        runTime: '1h 27m',
         genres: ['Comedy', 'Action', 'Adventure'],
         year: '2003',
         background: '/img/bg-johnny-english.jpg',
@@ -345,6 +358,7 @@ export const movies = [
     {
         id: 'ecc57abe-684e-43d1-a754-7c6596686ffe',
         title: 'Snatch',
+        runTime: '1h 42m',
         genres: ['Comedy', 'Crime'],
         year: '2000',
         background: '/img/bg-snatch.jpg',
@@ -367,6 +381,7 @@ export const movies = [
     {
         id: '3adc0faa-6c83-4490-bb8c-373fff32c456',
         title: 'Moonrise Kingdom',
+        runTime: '1h 34m',
         genres: ['Adventure', 'Comedy', 'Drama'],
         year: '2012',
         background: '/img/bg-moonrise-kingdom.jpg',
@@ -389,6 +404,7 @@ export const movies = [
     {
         id: '7a9da465-9f8a-402d-ac4c-6fd0ffd2ab47',
         title: 'Seven Years in Tibet',
+        runTime: '2h 16m',
         genres: ['Adventure', 'Biography', 'Drama'],
         year: '1997',
         background: '/img/bg-seven-years-in-tibet.jpg',
@@ -411,6 +427,7 @@ export const movies = [
     {
         id: 'bbc28343-e273-4db5-b6a6-db19864c5a13',
         title: 'Midnight Special',
+        runTime: '1h 52m',
         genres: ['Sci-Fi', 'Drama', 'Mystery'],
         year: '2016',
         background: '/img/bg-midnight-special.jpg',
@@ -433,6 +450,7 @@ export const movies = [
     {
         id: 'f74819d9-300e-4323-a48a-762a9f99f9f8',
         title: 'The Dardjeeling Limited',
+        runTime: '1h 31m',
         genres: ['Adventure', 'Comedy', 'Drama'],
         year: '2007',
         background: '/img/bg-dardjeeling-limited.jpg',
@@ -455,6 +473,7 @@ export const movies = [
     {
         id: 'f15b0001-beea-435a-b4b7-6d20df54d228',
         title: 'Orlando',
+        runTime: '1h 34m',
         genres: ['Drama', 'Biography', 'Fantasy'],
         year: '1992',
         background: '/img/bg-orlando.jpg',
@@ -477,6 +496,7 @@ export const movies = [
     {
         id: 'cf28f87b-59b9-477f-bca8-a5d3b40db2c8',
         title: 'Mindhunter',
+        runTime: '1h / episode',
         genres: ['Drama', 'Crime', 'Mystery'],
         year: '2017-2019',
         background: '/img/bg-mindhunter.jpg',
