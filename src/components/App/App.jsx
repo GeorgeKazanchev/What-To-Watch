@@ -1,9 +1,10 @@
 import React from 'react';
-import Main from '../Main/Main.jsx'; 
+import Main from '../Main/Main.jsx';
 import MoviePage from '../MoviePage/MoviePage.jsx';
 import NotFound from '../NotFound/NotFound.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { promoMovie, userAvatar, genres, movies } from '../../util/debug-data.js';
+import { reviews } from '../../util/reviews.js';
 import { AppRoute } from '../../util/settings.js';
 import '../../css/main.css';
 
@@ -15,25 +16,28 @@ export default function App() {
         setCurrentPage(AppRoute.Movie);
         setCurrentMovie(movie);
     };
-    
+
+    const currentMovieReviews = getCurrentMovieReviews(reviews, currentMovie);
+
     const renderApp = () => {
-        switch(currentPage) {
+        switch (currentPage) {
             case AppRoute.Main:
                 return (
-                    <Main 
+                    <Main
                         promoMovie={promoMovie}
                         userAvatar={userAvatar}
                         genres={genres}
                         movies={movies}
-                        onMovieClick={handleMovieClick}/>
+                        onMovieClick={handleMovieClick} />
                 );
             case AppRoute.Movie:
                 return (
-                    <MoviePage 
+                    <MoviePage
                         movie={currentMovie}
                         userAvatar={userAvatar}
                         movies={movies}
-                        onMovieClick={handleMovieClick}/>
+                        reviews={currentMovieReviews}
+                        onMovieClick={handleMovieClick} />
                 );
             default:
                 return null;
@@ -43,17 +47,24 @@ export default function App() {
     return (
         <Router>
             <Routes>
-                <Route path='/' Component={renderApp}/>
-                <Route path='/debug-movie' Component={() => 
-                    <MoviePage 
+                <Route path='/' Component={renderApp} />
+                <Route path='/debug-movie' Component={() =>
+                    <MoviePage
                         movie={currentMovie}
                         userAvatar={userAvatar}
-                        similarMovies={similarMovies}
-                        onMovieClick={handleMovieClick}/>
-                }/>
+                        movies={movies}
+                        reviews={currentMovieReviews}
+                        onMovieClick={handleMovieClick} />
+                } />
                 <Route path='*' Component={
-                    () => <NotFound />}/>
+                    () => <NotFound />} />
             </Routes>
         </Router>
     );
+}
+
+function getCurrentMovieReviews(reviews, currentMovie) {
+    const currentMovieReviews = reviews.filter((movieReviews) =>
+        movieReviews.movie === currentMovie.title);
+    return currentMovieReviews[0].reviews;
 }

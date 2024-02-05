@@ -5,19 +5,46 @@ import MovieCardButtons from '../MovieCardButtons/MovieCardButtons.jsx';
 import MoviePageNavigation from '../MoviePageNavigation/MoviePageNavigation.jsx';
 import Footer from '../Footer/Footer.jsx';
 import SimilarMovies from '../SimilarMovies/SimilarMovies.jsx';
+import MovieOverview from '../MovieOverview/MovieOverview.jsx';
+import MovieDetails from '../MovieDetails/MovieDetails.jsx';
+import MovieReviews from '../MovieReviews/MovieReviews.jsx';
+import { CustomPropTypes } from '../../util/custom-prop-types.js';
+import { NavTabs } from '../../util/constants.js';
 
-export default function MoviePage({ movie, userAvatar, movies, onMovieClick }) {
-    const directorsLabel = movie.directors.length > 1 ? 'Directors' : 'Director'; 
+export default function MoviePage({ movie, userAvatar, movies, reviews, onMovieClick }) {
+    const [currentTab, setCurrentTab] = React.useState(NavTabs.OVERVIEW);
+
+    const handleTabClick = (tab) => {
+        setCurrentTab(tab);
+    };
+
+    const renderScreen = () => {
+        switch (currentTab) {
+            case NavTabs.OVERVIEW:
+                return <MovieOverview
+                    movie={movie} />;
+            case NavTabs.DETAILS:
+                return <MovieDetails
+                    movie={movie} />;
+            case NavTabs.REVIEWS:
+                return <MovieReviews
+                    reviews={reviews} />;
+            default:
+                return null;
+        }
+    };
 
     return (
         <React.Fragment>
             <section className='movie-card movie-card--full'>
                 <div className='movie-card__hero'>
                     <div className='movie-card__bg disable-text-selection'>
-                        <img src={movie.background} alt={movie.title} draggable='false'/>
+                        <img src={movie.background} alt={movie.title} draggable='false' />
                     </div>
                     <h1 className='visually-hidden disable-text-selection'>WTW</h1>
-                    <Header userAvatar={userAvatar} />
+                    <Header
+                        userAvatar={userAvatar}
+                        isMainPage={false} />
                     <div className='movie-card__wrap'>
                         <div className='movie-card__desc'>
                             <h2 className='movie-card__title'>{movie.title}</h2>
@@ -33,22 +60,14 @@ export default function MoviePage({ movie, userAvatar, movies, onMovieClick }) {
                 <div className='movie-card__wrap movie-card__translate-top'>
                     <div className='movie-card__info'>
                         <div className='movie-card__poster movie-card__poster--big'>
-                            <img src={movie.pagePoster} alt={movie.title} width='218' height='327' draggable='false'/>
+                            <img src={movie.pagePoster} alt={movie.title} width='218' height='327' draggable='false' />
                         </div>
                         <div className='movie-card__desc'>
-                            <MoviePageNavigation />
-                            <div className='movie-rating'>
-                                <div className='movie-rating__score'>{movie.rating}</div>
-                                <p className='movie-rating__meta'>
-                                    <span className='movie-rating__level'>{movie.ratingDescription}</span>
-                                    <span className='movie-rating__count'>{movie.reviewsCount} reviews</span>
-                                </p>
-                            </div>
-                            <div className='movie-card__text'>
-                                <p>{movie.description}</p>
-                                <p className='movie-card__director'><strong>{directorsLabel}: {movie.directors.join(', ')}</strong></p>
-                                <p className='movie-card__starring'><strong>Starring: {movie.starring.join(', ')}</strong></p>
-                            </div>
+                            <MoviePageNavigation
+                                navTabs={Object.values(NavTabs)}
+                                currentTab={currentTab}
+                                onTabClick={handleTabClick} />
+                            {renderScreen()}
                         </div>
                     </div>
                 </div>
@@ -58,16 +77,17 @@ export default function MoviePage({ movie, userAvatar, movies, onMovieClick }) {
                 <SimilarMovies
                     movies={movies}
                     currentMovie={movie}
-                    onSimilarMovieClick={onMovieClick}/>
-                <Footer />
+                    onSimilarMovieClick={onMovieClick} />
+                <Footer
+                    isMainPage={false} />
             </div>
         </React.Fragment>
     );
 }
 
 MoviePage.propTypes = {
-    movie: PropTypes.object.isRequired,
-    userAvatar: PropTypes.object.isRequired,
-    similarMovies: PropTypes.array.isRequired,
+    movie: CustomPropTypes.MOVIE,
+    userAvatar: CustomPropTypes.USER_AVATAR,
+    movies: PropTypes.arrayOf(CustomPropTypes.MOVIE).isRequired,
     onMovieClick: PropTypes.func.isRequired
 };
