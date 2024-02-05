@@ -1,17 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Logo from '../Logo/Logo.jsx';
 import UserBlock from '../UserBlock/UserBlock.jsx';
+import { CustomPropTypes } from '../../util/custom-prop-types.js';
 
-export default function Header({userAvatar}) {
+export default function Header({ userAvatar, isMainPage }) {
     return (
         <header className='page-header movie-card__head disable-text-selection'>
-            <Logo isLight={false}/>
-            <UserBlock avatar={userAvatar}/>
+            <Logo
+                isLight={false}
+                isMainPage={isMainPage} />
+            <UserBlock
+                avatar={userAvatar} />
         </header>
     );
 }
 
 Header.propTypes = {
-    userAvatar: PropTypes.object.isRequired
+    userAvatar: CustomPropTypes.USER_AVATAR
 };
