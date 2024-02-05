@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import GenresList from '../GenresList/GenresList.jsx';
 import MoviesList from '../MoviesList/MoviesList.jsx';
+import { CustomPropTypes } from '../../util/custom-prop-types.js';
 
-export default function Catalog({genres, movies, onMovieClick}) {
+export default function Catalog({ genres, movies, onMovieClick }) {
     return (
         <section className='catalog'>
             <h2 className='catalog__title visually-hidden'>Catalog</h2>
             <GenresList genres={genres} />
-            <MoviesList movies={movies} onMovieClick={onMovieClick}/>
+            <MoviesList movies={movies} onMovieClick={onMovieClick} />
             <div className='catalog__more'>
                 <button className='catalog__button' type='button'>Show more</button>
             </div>
@@ -17,7 +18,7 @@ export default function Catalog({genres, movies, onMovieClick}) {
 }
 
 Catalog.propTypes = {
-    genres: PropTypes.array.isRequired,
-    movies: PropTypes.array.isRequired,
+    genres: PropTypes.arrayOf(CustomPropTypes.GENRE).isRequired,
+    movies: PropTypes.arrayOf(CustomPropTypes.MOVIE).isRequired,
     onMovieClick: PropTypes.func.isRequired
 };

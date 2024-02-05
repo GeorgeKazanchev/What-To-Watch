@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Genre from '../Genre/Genre.jsx';
+import { CustomPropTypes } from '../../util/custom-prop-types.js';
 
-export default function GenresList({genres}) {
-    const genresList = genres.map((genre) => 
-        <Genre 
+export default function GenresList({ genres }) {
+    const genresList = genres.map((genre) =>
+        <Genre
             key={genre.id}
             name={genre.name}
-            isActive={false}/>);
-    
+            isActive={false} />);
+
     return (
         <ul className='catalog__genres-list'>
             {genresList}
@@ -17,5 +18,5 @@ export default function GenresList({genres}) {
 }
 
 GenresList.propTypes = {
-    genres: PropTypes.array.isRequired
+    genres: PropTypes.arrayOf(CustomPropTypes.GENRE).isRequired
 };

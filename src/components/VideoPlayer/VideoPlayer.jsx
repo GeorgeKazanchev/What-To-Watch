@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { CustomPropTypes } from '../../util/custom-prop-types.js';
+import { VIDEO_NOT_EXIST_ERROR_MESSAGE } from '../../util/constants.js';
 
-export default function VideoPlayer({sources, poster, isPlaying}) {
+export default function VideoPlayer({ sources, poster, isPlaying }) {
     const video = React.useRef(null);
     const sourcesList = sources.map((source) =>
-        <source src={source.path} type={source.type}/>);
-    const ERROR_MESSAGE = 'Your browser does not support the video tag.';
+        <source src={source.path} type={source.type} />);
 
     useEffect(() => {
         if (isPlaying) {
@@ -27,14 +28,14 @@ export default function VideoPlayer({sources, poster, isPlaying}) {
                 muted
                 ref={video}>
                 {sourcesList}
-                {ERROR_MESSAGE}
+                {VIDEO_NOT_EXIST_ERROR_MESSAGE}
             </video>
         </React.Fragment>
     );
 }
 
 VideoPlayer.PropTypes = {
-    sources: PropTypes.array.isRequired,
+    sources: PropTypes.arrayOf(CustomPropTypes.PREVIEW_SOURCE).isRequired,
     poster: PropTypes.string.isRequired,
     isPlaying: PropTypes.bool.isRequired
 };
