@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatToWatch.Test.Entities", "WhatToWatch.Test.Entities.csproj", "{18392BB1-9B5B-49FF-A7F3-FEC8535F9FCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18392BB1-9B5B-49FF-A7F3-FEC8535F9FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18392BB1-9B5B-49FF-A7F3-FEC8535F9FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18392BB1-9B5B-49FF-A7F3-FEC8535F9FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18392BB1-9B5B-49FF-A7F3-FEC8535F9FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A6F3491-AB9A-47A7-A48B-4088B352DC9E}
+	EndGlobalSection
+EndGlobal
