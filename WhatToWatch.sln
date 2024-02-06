@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatToWatch.Domain.Entities
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatToWatch.Test.Entities", "WhatToWatch\Test\WhatToWatch.Test.Entities\WhatToWatch.Test.Entities.csproj", "{1FD345EF-A909-4892-8931-E640BBC97C6C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatToWatch.Data.DatabaseAccess", "WhatToWatch\Data\WhatToWatch.Data.DatabaseAccess\WhatToWatch.Data.DatabaseAccess.csproj", "{5F144BB8-74FE-4D08-BF3E-601494715F86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1FD345EF-A909-4892-8931-E640BBC97C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FD345EF-A909-4892-8931-E640BBC97C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FD345EF-A909-4892-8931-E640BBC97C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F144BB8-74FE-4D08-BF3E-601494715F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F144BB8-74FE-4D08-BF3E-601494715F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F144BB8-74FE-4D08-BF3E-601494715F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F144BB8-74FE-4D08-BF3E-601494715F86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
