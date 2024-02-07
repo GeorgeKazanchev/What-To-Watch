@@ -11,7 +11,7 @@ namespace WhatToWatch.Test.Entities
         [SetUp]
         public void SetMockReview()
         {
-            User user = new("Prismark10", new DateTime(2017, 07, 01));
+            User user = new("Prismark10", new DateOnly(2017, 07, 01));
             string content = "Fantastic Beasts: The Crimes of Grindelwald shows that J K Rowling should " +
                 "not be writing screenplays";
             byte rating = 50;
@@ -22,7 +22,7 @@ namespace WhatToWatch.Test.Entities
         [Test]
         public void ConstructorTest()
         {
-            User author = new("carmelarcher_01", new DateTime(2015, 05, 07));
+            User author = new("carmelarcher_01", new DateOnly(2015, 05, 07));
             string content = "Almost impossible to keep up with what was going on! Just jumped from one thing to " +
                 "the next with no development, such a shame.";
             byte rating = 40;

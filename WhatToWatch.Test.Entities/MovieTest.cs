@@ -12,8 +12,8 @@ namespace WhatToWatch.Test.Entities
         {
             string title = "Pulp Fiction";
             TimeSpan runTime = TimeSpan.FromMinutes(154);
-            ushort? releaseYear = 1994;
-            ushort? endYear = null;
+            short? releaseYear = 1994;
+            short? endYear = null;
             List<Actor> actors = new() { new Actor("John Travolta"), new Actor("Uma Thurman"), new Actor("Samuel L. Jackson") };
             List<Director> directors = new() { new Director("Quentin Tarantino") };
             List<Genre> genres = new() { new Genre("Drama"), new Genre("Crime") };
@@ -21,7 +21,7 @@ namespace WhatToWatch.Test.Entities
                 "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner " +
                 "bandits intertwine in four tales of violence and redemption.")
             };
-            List<Review> reviews = new() { new Review(new User("bevo-13678", new DateTime(2017, 05, 14)),
+            List<Review> reviews = new() { new Review(new User("bevo-13678", new DateOnly(2017, 05, 14)),
                 "I like the bit with the cheeseburger. It makes me want to go and get a cheeseburger",
                 100, new DateTime(2020, 03, 30))
             };
@@ -35,8 +35,8 @@ namespace WhatToWatch.Test.Entities
         {
             string title = "The Grand Budapest Hotel";
             TimeSpan runTime = TimeSpan.FromMinutes(99);
-            ushort? releaseYear = 2014;
-            ushort? endYear = null;
+            short? releaseYear = 2014;
+            short? endYear = null;
             List<Actor> actors = new() { new Actor("Ralph Fiennes"), new Actor("F. Murray Abraham") };
             List<Director> directors = new() { new Director("Wes Anderson") };
             List<Genre> genres = new() { new Genre("Adventure"), new Genre("Comedy"), new Genre("Crime") };
@@ -45,7 +45,7 @@ namespace WhatToWatch.Test.Entities
                 "of his early years serving as a lobby boy in the hotel\\'s glorious years " +
                 "under an exceptional concierge.") 
             };
-            List<Review> reviews = new() { new Review(new User("iliasalk", new DateTime(2014, 01, 01)),
+            List<Review> reviews = new() { new Review(new User("iliasalk", new DateOnly(2014, 01, 01)),
                 "A totally dysfunctional and unrelated cast, an incomprehensible story and tons and tons of computer graphics",
                 30, new DateTime(2018, 12, 21))
             };

@@ -2,7 +2,7 @@
 {
     public class Review : ICloneable
     {
-        public Review(User author, string content, byte rating, DateTime creationTime)
+        public Review(User author, string content, short? rating, DateTime creationTime)
         {
             Author = (User) author.Clone();
             Content = content;
@@ -22,7 +22,7 @@
 
         public string Content { get; }
 
-        public byte Rating { get; }
+        public short? Rating { get; }
 
         public DateTime CreationTime { get; }
 

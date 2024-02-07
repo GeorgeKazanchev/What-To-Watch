@@ -2,7 +2,7 @@
 {
     public class User : ICloneable
     {
-        public User(string name, DateTime registrationDate)
+        public User(string name, DateOnly? registrationDate)
         {
             Name = name;
             RegistrationDate = registrationDate;
@@ -16,7 +16,7 @@
 
         public string Name { get; }
 
-        public DateTime RegistrationDate { get; }
+        public DateOnly? RegistrationDate { get; }
 
         public object Clone()
         {

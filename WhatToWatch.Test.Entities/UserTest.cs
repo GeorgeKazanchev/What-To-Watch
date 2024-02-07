@@ -11,7 +11,7 @@ namespace WhatToWatch.Test.Entities
         public void SetMockUser()
         {
             string name = "Chameleon777";
-            DateTime registrationDate = new(2017, 06, 05);
+            DateOnly registrationDate = new(2017, 06, 05);
             MockUser = new(name, registrationDate);
         }
 
@@ -19,7 +19,7 @@ namespace WhatToWatch.Test.Entities
         public void ConstructorTest()
         {
             string name = "Chameleon007";
-            DateTime registrationDate = new(2018, 04, 01);
+            DateOnly registrationDate = new(2018, 04, 01);
             User user = new(name, registrationDate);
             Assert.Multiple(() =>
             {

@@ -2,7 +2,7 @@
 {
     public class Movie : ICloneable
     {
-        public Movie(string title, TimeSpan runTime, ushort? releaseYear, ushort? endYear,
+        public Movie(string title, TimeSpan runTime, short? releaseYear, short? endYear,
             List<Actor> actors, List<Director> directors, List<Genre> genres, List<MovieDescription> descriptions,
             List<Review> reviews, List<MoviePreview> previews)
         {
@@ -36,9 +36,9 @@
 
         public TimeSpan RunTime { get; }
 
-        public ushort? ReleaseYear { get; }
+        public short? ReleaseYear { get; }
 
-        public ushort? EndYear { get; }
+        public short? EndYear { get; }
 
         public List<Actor> Actors { get; }
 
