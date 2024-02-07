@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\WhatToWatch.Domain.Entities\WhatToWatch.Domain.Entities.csproj" />
+    <ProjectReference Include="..\WhatToWatch.Domain.Entities\WhatToWatch.Domain.Entities.csproj" />
   </ItemGroup>
 
 </Project>

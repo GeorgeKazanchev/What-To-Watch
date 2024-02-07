@@ -1,4 +1,5 @@
-﻿using WhatToWatch.Domain.Entities;
+﻿using NUnit.Framework;
+using WhatToWatch.Domain.Entities;
 
 namespace WhatToWatch.Test.Entities
 {
