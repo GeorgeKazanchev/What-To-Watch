@@ -1,0 +1,1 @@
+export const MAX_SIMILAR_MOVIES_COUNT = 4;
