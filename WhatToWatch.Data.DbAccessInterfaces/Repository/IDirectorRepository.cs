@@ -1,6 +1,6 @@
 ﻿using WhatToWatch.Domain.Entities;
 
-namespace WhatToWatch.Data.DbAccessInterfaces
+namespace WhatToWatch.Data.DbAccessInterfaces.Repository
 {
     public interface IDirectorRepository
     {
