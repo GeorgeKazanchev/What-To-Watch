@@ -1,0 +1,1 @@
+export const VIDEO_NOT_EXIST_ERROR_MESSAGE = 'Your browser does not support the video tag.';
