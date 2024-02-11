@@ -26,6 +26,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatToWatch.Web", "WhatToWa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatToWatch.Data.DbAccessInterfaces", "WhatToWatch.Data.DbAccessInterfaces\WhatToWatch.Data.DbAccessInterfaces.csproj", "{77533E26-FB31-4EB9-8315-3AC8108ED8C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatToWatch.Test.PostgreSqlAccess", "WhatToWatch.Test.PostgreSqlAccess\WhatToWatch.Test.PostgreSqlAccess.csproj", "{A2714463-1CC9-4E81-8370-0E2B74654362}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{77533E26-FB31-4EB9-8315-3AC8108ED8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77533E26-FB31-4EB9-8315-3AC8108ED8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77533E26-FB31-4EB9-8315-3AC8108ED8C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2714463-1CC9-4E81-8370-0E2B74654362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2714463-1CC9-4E81-8370-0E2B74654362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2714463-1CC9-4E81-8370-0E2B74654362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2714463-1CC9-4E81-8370-0E2B74654362}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +68,7 @@ Global
 		{71AE0177-56CF-4DA6-9CFA-B2E5C068A27F} = {86B48A90-9B23-4027-912A-86C8A5CF9D98}
 		{0A76063F-DE62-401D-BDED-6B137258776B} = {64161CBD-5D0A-4E17-89BA-711D1F0F9C23}
 		{77533E26-FB31-4EB9-8315-3AC8108ED8C6} = {86B48A90-9B23-4027-912A-86C8A5CF9D98}
+		{A2714463-1CC9-4E81-8370-0E2B74654362} = {367DA349-5C33-49B7-906F-7962A6F4D3FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E2597FB-4776-41CF-AF0A-84E163692E2C}
