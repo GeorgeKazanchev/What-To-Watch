@@ -1,4 +1,5 @@
 ﻿using WhatToWatch.Data.DbAccessInterfaces.Repository;
+using WhatToWatch.Data.PostgreSqlAccess.Mappers;
 using WhatToWatch.Domain.Entities;
 
 namespace WhatToWatch.Data.PostgreSqlAccess.Repository
@@ -17,7 +18,18 @@ namespace WhatToWatch.Data.PostgreSqlAccess.Repository
             using var db = new WtwContext(ConnectionString);
             var movie = db.Movies.FirstOrDefault(m => m.Title == movieTitle);
             if (movie == null) throw new Exception("Фильм с заданным названием не найден в БД.");
-            throw new NotImplementedException();
+
+            var reviews = db.Reviews.Where(r => r.IdMovie == movie.Id).ToList();
+            var reviewsDomain = new List<Review>();
+            foreach (var review in reviews)
+            {
+                var author = db.Users.FirstOrDefault(u => u.Id == review.IdAuthor);
+                if (author == null) throw new Exception("Пользователь, которому принадлежит отзыв, не найден в БД.");
+                var authorDomain = UserMapper.ToDomain(author);
+                reviewsDomain.Add(ReviewMapper.ToDomain(review, authorDomain));
+            }
+
+            return reviewsDomain;
         }
     }
 }
