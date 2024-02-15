@@ -1,6 +1,4 @@
-﻿using System.Net;
-using WhatToWatch.Data.DbAccessInterfaces;
-using WhatToWatch.Data.PostgreSqlAccess;
+﻿using WhatToWatch.Data.PostgreSqlAccess;
 using WhatToWatch.Data.PostgreSqlAccess.Repository;
 
 namespace WhatToWatch.Test.PostgreSqlAccess.RepositoryTest
@@ -14,16 +12,7 @@ namespace WhatToWatch.Test.PostgreSqlAccess.RepositoryTest
         [SetUp]
         public void InitializeDatabase()
         {
-            string databaseName = "what-to-watch-test";
-            string schemeName = "public";
-            IPAddress serverAddress = new(new byte[] { 127, 0, 0, 1 });
-            int port = 5432;
-            DatabaseType databaseType = DatabaseType.PostgreSql;
-            string defaultUsername = "wtw_test_user";
-            string defaultPassword = "test_password";
-
-            Database = new PostgreSqlDatabase(databaseName, schemeName, serverAddress, port, databaseType,
-                defaultUsername, defaultPassword);
+            Database = Utility.CreateTestDatabase();
             Repository = new MoviePreviewRepository(Database.DefaultConnectionString);
         }
 
