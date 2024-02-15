@@ -217,12 +217,18 @@ public partial class WtwContext : DbContext
                 .HasColumnName("content");
             entity.Property(e => e.CreationTime).HasColumnName("creation_time");
             entity.Property(e => e.IdAuthor).HasColumnName("id_author");
+            entity.Property(e => e.IdMovie).HasColumnName("id_movie");
             entity.Property(e => e.Rating).HasColumnName("rating");
 
             entity.HasOne(d => d.IdAuthorNavigation).WithMany(p => p.Reviews)
                 .HasForeignKey(d => d.IdAuthor)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("review_fkey_author");
+
+            entity.HasOne(d => d.IdMovieNavigation).WithMany(p => p.Reviews)
+                .HasForeignKey(d => d.IdMovie)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("review_fkey_movie");
         });
 
         modelBuilder.Entity<User>(entity =>

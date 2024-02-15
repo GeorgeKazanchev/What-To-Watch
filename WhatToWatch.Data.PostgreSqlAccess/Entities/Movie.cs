@@ -19,6 +19,8 @@ public partial class Movie
 
     public virtual ICollection<MoviePreview> MoviePreviews { get; set; } = new List<MoviePreview>();
 
+    public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
+
     public virtual ICollection<Actor> IdActors { get; set; } = new List<Actor>();
 
     public virtual ICollection<Director> IdDirectors { get; set; } = new List<Director>();

@@ -15,5 +15,9 @@ public partial class Review
 
     public DateTime CreationTime { get; set; }
 
+    public int IdMovie { get; set; }
+
     public virtual User IdAuthorNavigation { get; set; } = null!;
+
+    public virtual Movie IdMovieNavigation { get; set; } = null!;
 }
