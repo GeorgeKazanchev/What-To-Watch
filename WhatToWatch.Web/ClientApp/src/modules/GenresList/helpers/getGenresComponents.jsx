@@ -1,10 +1,10 @@
 import React from 'react';
 import Genre from '../../../components/Genre/Genre.jsx';
 
-export default function getGenresComponents(genres) {
+export default function getGenresComponents(genres, activeGenre) {
     return genres.map((genre) =>
         <Genre
             key={genre.id}
             name={genre.name}
-            isActive={false} />)
+            isActive={genre.id === activeGenre.id} />)
 }

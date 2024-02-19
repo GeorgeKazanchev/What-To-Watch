@@ -4,7 +4,8 @@ import getGenresComponents from './helpers/getGenresComponents.jsx';
 import { CustomPropTypes } from '../../util/custom-prop-types.js';
 
 export default function GenresList({ genres }) {
-    const genresComponents = getGenresComponents(genres);
+    const [activeGenre, setActiveGenre] = React.useState(genres[0]);
+    const genresComponents = getGenresComponents(genres, activeGenre);
     
     return (
         <ul className='catalog__genres-list'>
