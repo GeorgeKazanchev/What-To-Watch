@@ -4,8 +4,11 @@ import MovieCard from '../../modules/MovieCard/MovieCard.jsx';
 import Catalog from '../../modules/Catalog/Catalog.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 import { CustomPropTypes } from '../../util/custom-prop-types.js';
+import { getMoviesGenres } from './helpers/getMoviesGenres.js';
 
-export default function Main({ promoMovie, userAvatar, genres, movies, onMovieClick }) {
+export default function Main({ promoMovie, userAvatar, movies, onMovieClick }) {
+    const genres = getMoviesGenres(movies);
+    
     return (
         <div className='page-content'>
             <MovieCard

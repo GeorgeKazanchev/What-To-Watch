@@ -4,14 +4,13 @@ import MoviePage from '../../MoviePage/MoviePage.jsx';
 import { AppRoute } from '../constants/appRoute.js';
 
 export default function renderApp(currentPage, currentMovie, promoMovie, userAvatar,
-        currentMovieReviews, genres, movies, onMovieClick) {
+        currentMovieReviews, movies, onMovieClick) {
     switch (currentPage) {
         case AppRoute.MAIN:
             return (
                 <Main
                     promoMovie={promoMovie}
                     userAvatar={userAvatar}
-                    genres={genres}
                     movies={movies}
                     onMovieClick={onMovieClick} />
             );

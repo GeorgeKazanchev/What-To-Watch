@@ -2,7 +2,7 @@ import React from 'react';
 import MoviePage from '../MoviePage/MoviePage.jsx';
 import NotFound from '../NotFound/NotFound.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { promoMovie, userAvatar, genres, movies } from '../../util/debug-data.js';
+import { promoMovie, userAvatar, movies } from '../../util/debug-data.js';
 import { AppRoute } from './constants/appRoute.js';
 import renderApp from './helpers/renderApp.jsx';
 import '../../css/main.css';
@@ -21,7 +21,7 @@ export default function App() {
             <Routes>
                 <Route path='/' Component={() => {
                     return renderApp(currentPage, currentMovie, promoMovie, userAvatar,
-                        currentMovie.reviews, genres, movies, handleMovieClick);
+                        currentMovie.reviews, movies, handleMovieClick);
                 }} />
                 <Route path='/debug-movie' Component={() =>
                     <MoviePage
