@@ -5,7 +5,7 @@ import { CustomPropTypes } from '../../util/custom-prop-types.js';
 
 export default function MoviesList({ movies, onMovieClick }) {
     const [currentMovie, setCurrentMovie] = React.useState(null);
-    const smallMovieCards = getSmallMovieCards(movies, onMovieClick, setCurrentMovie);
+    const smallMovieCards = getSmallMovieCards(movies, onMovieClick, currentMovie, setCurrentMovie);
 
     return (
         <div className='catalog__movies-list'>

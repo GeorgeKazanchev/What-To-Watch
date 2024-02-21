@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import VideoPlayer from '../VideoPlayer/VideoPlayer.jsx';
 import { CustomPropTypes } from '../../util/custom-prop-types.js';
 
-export default function SmallMovieCard({ movie, onMovieClick, onMovieHover }) {
+export default function SmallMovieCard({ movie, onMovieClick, onMovieHover, currentMovie }) {
     const [isPlaying, setIsPlaying] = React.useState(false);
 
+    const needToResetVideo = movie.id !== currentMovie?.id;
     const handleMovieClick = (evt) => {
         evt.preventDefault();
         onMovieClick(movie);
@@ -28,7 +29,8 @@ export default function SmallMovieCard({ movie, onMovieClick, onMovieHover }) {
                 <VideoPlayer
                     sources={movie.previews}
                     poster={movie.poster}
-                    isPlaying={isPlaying} />
+                    isPlaying={isPlaying}
+                    needToResetVideo={needToResetVideo} />
             </div>
             <h3 className='small-movie-card__title' onClick={handleMovieClick}>
                 <a href='#' className='small-movie-card__link' draggable='false'>{movie.title}</a>

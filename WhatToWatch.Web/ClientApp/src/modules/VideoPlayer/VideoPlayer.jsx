@@ -4,16 +4,19 @@ import getSourcesElements from './helpers/getSourcesElements.jsx';
 import { CustomPropTypes } from '../../util/custom-prop-types.js';
 import { VIDEO_NOT_EXIST_ERROR_MESSAGE } from './constants/errorMessage.js';
 
-export default function VideoPlayer({ sources, poster, isPlaying }) {
+export default function VideoPlayer({ sources, poster, isPlaying, needToResetVideo }) {
     const video = React.useRef(null);
     const sourcesList = getSourcesElements(sources);
 
     useEffect(() => {
         if (isPlaying) {
             video.current.play();
-        }
-        else {
-            video.current.pause();
+        } else {
+            if (needToResetVideo) {
+                video.current.load();
+            } else {
+                video.current.pause();
+            }
         }
     });
 
