@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import getSourcesElements from './helpers/getSourcesElements.jsx';
 import { CustomPropTypes } from '../../util/custom-prop-types.js';
 import { VIDEO_NOT_EXIST_ERROR_MESSAGE } from './constants/errorMessage.js';
 
@@ -37,8 +36,17 @@ export default function VideoPlayer({ sources, poster, isPlaying, needToResetVid
     );
 }
 
+function getSourcesElements(sources) {
+    return sources.map((source, index) =>
+        <source
+            key={index}
+            src={source.path}
+            type={source.type} />);
+}
+
 VideoPlayer.PropTypes = {
     sources: PropTypes.arrayOf(CustomPropTypes.PREVIEW_SOURCE).isRequired,
     poster: PropTypes.string.isRequired,
-    isPlaying: PropTypes.bool.isRequired
+    isPlaying: PropTypes.bool.isRequired,
+    needToResetVideo: PropTypes.bool.isRequired
 };
