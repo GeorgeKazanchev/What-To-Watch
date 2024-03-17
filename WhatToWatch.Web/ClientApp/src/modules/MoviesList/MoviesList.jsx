@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import getSmallMovieCards from './helpers/getSmallMovieCards.jsx';
+import SmallMovieCard from '../SmallMovieCard/SmallMovieCard.jsx';
 import { CustomPropTypes } from '../../util/custom-prop-types.js';
 
 export default function MoviesList({ movies, onMovieClick }) {
@@ -12,6 +12,18 @@ export default function MoviesList({ movies, onMovieClick }) {
             {smallMovieCards}
         </div>
     );
+}
+
+function getSmallMovieCards(movies, onMovieClick, currentMovie, setCurrentMovie) {
+    return movies.map((movie) =>
+        <SmallMovieCard
+            key={movie.id}
+            movie={movie}
+            onMovieClick={onMovieClick}
+            onMovieHover={() => {
+                setCurrentMovie(movie);
+            }}
+            currentMovie={currentMovie} />);
 }
 
 MoviesList.propTypes = {

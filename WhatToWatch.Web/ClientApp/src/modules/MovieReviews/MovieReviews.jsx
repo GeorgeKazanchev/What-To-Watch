@@ -1,5 +1,5 @@
 import React from 'react';
-import getMovieReviewColumns from './helpers/getMovieReviewColumns.jsx';
+import MovieReview from './components/MovieReview/MovieReview.jsx';
 import splitReviews from './helpers/splitReviews.js';
 import { CustomPropTypes } from '../../util/custom-prop-types.js';
 
@@ -14,6 +14,21 @@ export default function MovieReviews({ reviews }) {
             </div>
         </React.Fragment>
     );
+}
+
+function getMovieReviewColumns(splittedReviews) {
+    return splittedReviews.map((reviewColumn, index) => {
+        return (
+            <div
+                key={index}
+                className='movie-card__reviews-col'>
+                {reviewColumn.map((review) =>
+                    <MovieReview
+                        key={review.id}
+                        review={review} />)}
+            </div>
+        );
+    });
 }
 
 MovieReviews.propTypes = {

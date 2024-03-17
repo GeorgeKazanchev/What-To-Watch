@@ -37,5 +37,6 @@ MoviePage.propTypes = {
     movie: CustomPropTypes.MOVIE,
     userAvatar: CustomPropTypes.USER_AVATAR,
     movies: PropTypes.arrayOf(CustomPropTypes.MOVIE).isRequired,
+    reviews: PropTypes.arrayOf(CustomPropTypes.REVIEW).isRequired,
     onMovieClick: PropTypes.func.isRequired
 };

@@ -1,5 +1,4 @@
 import React from 'react';
-import getStarringElements from './helpers/getStarringElements.jsx';
 import { CustomPropTypes } from '../../util/custom-prop-types.js';
 
 export default function MovieDetails({ movie }) {
@@ -21,23 +20,34 @@ export default function MovieDetails({ movie }) {
                         </span>
                     </p>
                 </div>
-            </div>
-            <div className='movie-card__text-col'>
-                <p className="movie-card__details-item">
-                    <strong className="movie-card__details-name">Run Time</strong>
-                    <span className="movie-card__details-value">{movie.runTime}</span>
-                </p>
-                <p className="movie-card__details-item">
-                    <strong className="movie-card__details-name">Genres</strong>
-                    <span className="movie-card__details-value">{movie.genres.join(', ')}</span>
-                </p>
-                <p className="movie-card__details-item">
-                    <strong className="movie-card__details-name">Released</strong>
-                    <span className="movie-card__details-value">{movie.date}</span>
-                </p>
+                <div className='movie-card__text-col'>
+                    <p className="movie-card__details-item">
+                        <strong className="movie-card__details-name">Run Time</strong>
+                        <span className="movie-card__details-value">{movie.runTime}</span>
+                    </p>
+                    <p className="movie-card__details-item">
+                        <strong className="movie-card__details-name">Genres</strong>
+                        <span className="movie-card__details-value">{movie.genres.join(', ')}</span>
+                    </p>
+                    <p className="movie-card__details-item">
+                        <strong className="movie-card__details-name">Released</strong>
+                        <span className="movie-card__details-value">{movie.year}</span>
+                    </p>
+                </div>
             </div>
         </React.Fragment>
     );
+}
+
+function getStarringElements(starring) {
+    return starring.map((actor, index) => {
+        return (
+            <React.Fragment
+                key={`${actor}-${index}`}>
+                {actor}, <br />
+            </React.Fragment>
+        );
+    })
 }
 
 MovieDetails.propTypes = {
