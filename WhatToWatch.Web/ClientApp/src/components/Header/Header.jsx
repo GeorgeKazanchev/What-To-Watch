@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Logo from '../Logo/Logo.jsx';
 import UserBlock from '../UserBlock/UserBlock.jsx';
 import { CustomPropTypes } from '../../util/custom-prop-types.js';
@@ -16,5 +17,6 @@ export default function Header({ userAvatar, isMainPage }) {
 }
 
 Header.propTypes = {
-    userAvatar: CustomPropTypes.USER_AVATAR
+    userAvatar: CustomPropTypes.USER_AVATAR,
+    isMainPage: PropTypes.bool.isRequired
 };

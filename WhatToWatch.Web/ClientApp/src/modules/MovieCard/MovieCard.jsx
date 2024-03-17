@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Header from '../../components/Header/Header.jsx';
 import MovieCardDescription from './components/MovieCardDescription/MovieCardDescription.jsx';
 import { CustomPropTypes } from '../../util/custom-prop-types.js';
@@ -27,5 +28,6 @@ export default function MovieCard({ movie, userAvatar, isMainPage }) {
 
 MovieCard.propTypes = {
     movie: CustomPropTypes.MOVIE,
-    userAvatar: CustomPropTypes.USER_AVATAR
+    userAvatar: CustomPropTypes.USER_AVATAR,
+    isMainPage: PropTypes.bool.isRequired
 };

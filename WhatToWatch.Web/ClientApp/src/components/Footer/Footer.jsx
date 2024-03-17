@@ -9,7 +9,7 @@ export default function Footer({ isMainPage }) {
                 isLight={true}
                 isMainPage={isMainPage} />
             <div className='copyright'>
-                <p>© 2019 What to watch Ltd.</p>
+                <p>© 2024 What to watch Ltd.</p>
             </div>
         </footer>
     );

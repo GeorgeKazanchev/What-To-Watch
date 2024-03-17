@@ -12,7 +12,7 @@ export default function MovieReview({ review }) {
                         <time className='review__date' dateTime='2024-01-01'>{review.date}</time>
                     </footer>
                 </blockquote>
-                <div className='review__rating'>{review.rating}</div>
+                <div className='review__rating'>{review.rating}/10</div>
             </div>
         </React.Fragment>
     );
