@@ -11,7 +11,6 @@ export const promoMovie = {
     ' who tells him of his early years serving as a lobby boy in the hotel\'s' + 
     ' glorious years under an exceptional concierge.',
     rating: '88',
-    ratingDescription: 'Excellent',
     reviewsCount: 1105,
     directors: ['Wes Anderson'],
     starring: ['Ralph Fiennes', 'F. Murray Abraham', 'Mathieu Amalric', 'Adrien Brody',
@@ -26,7 +25,7 @@ export const promoMovie = {
         {
             id: 'eb039010-3301-4966-bfc0-e61ab0faed57',
             author: 'planktonrules',
-            rating: '85',
+            rating: '8',
             date: '15 June 2014',
             content: 'Wes Anderson\'s films are really hard to describe or define. Suffice ' +
             'to say that he is unique in his style--very unique. This uniqueness is what makes ' +
@@ -40,7 +39,7 @@ export const promoMovie = {
         {
             id: 'ff8b7eed-86a8-429d-a15d-6fa8ee94dc25',
             author: 'perica-43151',
-            rating: '93',
+            rating: '9',
             date: '27 June 2018',
             content: 'If you like Wes Anderson, you will love this movie. Witty, entertaining and pleasant, ' +
             'it is a comedy in his unique style, that hits all the tones and notes that make him a unique and ' +
@@ -67,7 +66,6 @@ export const movies = [
         description: 'The second installment of the "Fantastic Beasts" series ' + 
         'featuring the adventures of Magizoologist Newt Scamander.',
         rating: '52',
-        ratingDescription: 'Good',
         reviewsCount: 1644,
         directors: ['David Yates'],
         starring: ['Eddie Redmayne', 'Katherine Waterston', 'Dan Fogler'],
@@ -81,7 +79,7 @@ export const movies = [
             {
                 id: 'f07cb619-1aee-472a-bb4d-32dcb094884d',
                 author: 'iliasalk',
-                rating: '30',
+                rating: '3',
                 date: '21 December 2018',
                 content: 'A totally dysfunctional and unrelated cast, an incomprehensible story and ' +
                 'tons and tons of computer graphics. The result is a confusing and totally boring movie. ' +
@@ -90,7 +88,7 @@ export const movies = [
             {
                 id: 'ee504b93-2e3d-42aa-8e59-d51ca798ac9e',
                 author: 'Prismark10',
-                rating: '50',
+                rating: '5',
                 date: '22 November 2018',
                 content: 'Fantastic Beasts: The Crimes of Grindelwald shows that J K Rowling should not ' +
                 'be writing screenplays although I am sure Steve Kloves who is credited as Executive Producer ' + 
@@ -100,7 +98,7 @@ export const movies = [
             {
                 id: '16e34c22-d938-43a4-88b1-78fc24186466',
                 author: 'carmelarcher_01',
-                rating: '40',
+                rating: '4',
                 date: '31 December 2018',
                 content: 'Almost impossible to keep up with what was going on! Just jumped from one thing to ' +
                 'the next with no development, such a shame'
@@ -108,7 +106,7 @@ export const movies = [
             {
                 id: '5fa531dd-0f95-427c-a332-f9ba4f8bbe01',
                 author: 'ThomasDrufke',
-                rating: '23',
+                rating: '2',
                 date: '8 December 2018',
                 content: 'I generally hate writing a review about a movie/tv episode that I hate. It feels ' + 
                 'like a waste of energy, especially knowing that there are plenty of people out there who ' + 
@@ -130,7 +128,6 @@ export const movies = [
         description: 'The story of the legendary British rock band Queen and lead singer Freddie Mercury, ' + 
         'leading up to their famous performance at Live Aid (1985).',
         rating: '49',
-        ratingDescription: 'Bad',
         reviewsCount: 3565,
         directors: ['Bryan Singer'],
         starring: ['Rami Malek', 'Lucy Boynton', 'Gwilym Lee'],
@@ -144,7 +141,7 @@ export const movies = [
             {
                 id: '5b5b3ecc-f45d-4360-a7d0-7f75df688f83',
                 author: 'jackrlarson-72679',
-                rating: '92',
+                rating: '9',
                 date: '23 October 2018',
                 content: 'One of the best movies of the year! The performances are all excellent. ' +
                 'The music surpasses what I had imagined. Brings back the eighties superbly. The last ' +
@@ -153,7 +150,7 @@ export const movies = [
             {
                 id: '17ed50a7-df20-4f59-830e-0937cc60a009',
                 author: 'sarahjanegannon',
-                rating: '100',
+                rating: '10',
                 date: '27 October 2018',
                 content: 'Wow. What a truly inspiring film. Made me feel that being eccentric and different ' +
                 'is ok as long as you are you! The film brought so many emotions - laughter, sadness, joy - ' +
@@ -176,7 +173,6 @@ export const movies = [
         'one day he will become King of Scotland. Consumed by ambition and spurred to action by his wife, ' + 
         'Macbeth murders his king and takes the throne for himself.',
         rating: '71',
-        ratingDescription: 'Good',
         reviewsCount: 280,
         directors: ['Justin Kurzel'],
         starring: ['Michael Fassbender', 'Marion Cotillard', 'Jack Madigan'],
@@ -190,7 +186,7 @@ export const movies = [
             {
                 id: '1c963c63-959b-42ba-a5e4-cb9f929003d7',
                 author: 'bazookamouth-221-898097',
-                rating: '63',
+                rating: '6',
                 date: '27 October 2018',
                 content: 'For: Beautiful scenery, The actors were all terrific. Macbeth\'s descent ' +
                 'into madness. The dark version of MacBeth.\nAgainst: Maybe the actress playing Lady ' +
@@ -200,7 +196,7 @@ export const movies = [
             {
                 id: 'a07bc0b2-993a-4849-b03a-7ea7cf071d0b',
                 author: 'chiaragiacobelli',
-                rating: '82',
+                rating: '8',
                 date: '21 March 2019',
                 content: 'I appreciated very much how the famous "Macbeth" written by Shakespeare has been ' +
                 'adapted for the cinema. It was not an easy job and the result is very good. Fassbender and ' +
@@ -222,7 +218,6 @@ export const movies = [
         description: 'A biopic depicting the early years of legendary director and aviator Howard Hughes\' ' + 
         'career from the late 1920s to the mid 1940s.',
         rating: '77',
-        ratingDescription: 'Excellent',
         reviewsCount: 907,
         directors: ['Martin Scorsese'],
         starring: ['Leonardo DiCaprio', 'Cate Blanchett', 'Kate Beckinsale'],
@@ -236,7 +231,7 @@ export const movies = [
             {
                 id: 'bec1b24c-b328-4cf2-9b85-c22e7762994b',
                 author: 'hankychan',
-                rating: '93',
+                rating: '9',
                 date: '18 November 2019',
                 content: 'Not too long ago I considered Scorsese to be highly overrated. I\'d liked ' +
                 'a lot of his films but didn\'t think any aside from Taxi Driver were amazing. When I ' +
@@ -246,7 +241,7 @@ export const movies = [
             {
                 id: '69fd0287-e3f7-45de-bd40-e0c2dffcc03a',
                 author: 'RonellSowes',
-                rating: '72',
+                rating: '7',
                 date: '16 February 2022',
                 content: 'The Aviator is typical Scorsese: chaotic, self-indulgent, grandiose and a film ' +
                 'clearly different from the indistinguishable blend of movies. As you can surmise, the film ' +
@@ -269,7 +264,6 @@ export const movies = [
         'things he says and does as he grows up. But Kevin is just getting started, and his final act will ' + 
         'be beyond anything anyone imagined.',
         rating: '68',
-        ratingDescription: 'Good',
         reviewsCount: 522,
         directors: ['Lynne Ramsay'],
         starring: ['Tilda Swinton', 'John C. Reilly', 'Ezra Miller'],
@@ -283,7 +277,7 @@ export const movies = [
             {
                 id: '9e5778e1-5c1d-4b07-b8af-5d49de42c60c',
                 author: 'ferguson-6',
-                rating: '80',
+                rating: '8',
                 date: '4 March 2012',
                 content: 'Greetings again from the darkness. The Brady Bunch, this isn\'t. It\'s also ' +
                 'not the place to look for helpful parenting tips. In fact, the story revolves around Eva, ' +
@@ -296,7 +290,7 @@ export const movies = [
             {
                 id: '583c9e8e-9063-40e4-97cf-41f6ecd9d51f',
                 author: 'irishjenna',
-                rating: '79',
+                rating: '7',
                 date: '23 January 2020',
                 content: 'Just watched this flick, not sure how I\'ve missed it all these years. This is ' +
                 'definitely an art house type film shown in a non linear fashion, so it won\'t be up ' +
@@ -312,7 +306,7 @@ export const movies = [
     {
         id: '14ab58c6-ecbd-4999-b1c5-e344b04cef03',
         title: 'What We Do in the Shadows',
-        runTime: '30m / episode',
+        runTime: '30m',
         genres: ['Comedy', 'Fantasy', 'Horror'],
         year: '2019-2024',
         background: '/img/bg-what-we-do-in-the-shadows.jpg',
@@ -320,7 +314,6 @@ export const movies = [
         pagePoster: '/img/page-what-we-do-in-the-shadows.jpg',
         description: 'A look into the nightly lives of four vampires who have lived together on Staten Island for over a century.',
         rating: '-',
-        ratingDescription: 'Рейтинг отсутствует',
         reviewsCount: 492,
         directors: ['Jemaine Clement'],
         starring: ['Kayvan Novak', 'Matt Berry', 'Natasia Demetriou'],
@@ -334,7 +327,7 @@ export const movies = [
             {
                 id: '445c9d27-0a0a-4ff1-b519-de1e032b73da',
                 author: 'Supermanfan-13',
-                rating: '100',
+                rating: '10',
                 date: '7 May 2020',
                 content: 'What We Do In the Shadows is one of the best new comedies to come out in years, it\'s actually one ' +
                 'of the funniest comedies I\'ve ever seen! I absolutely loved the movie so I thought this was going to be ' +
@@ -343,7 +336,7 @@ export const movies = [
             {
                 id: '2bd4be23-fe54-4003-930c-c592d257b73f',
                 author: 'mignonette1',
-                rating: '100',
+                rating: '10',
                 date: '2 May 2019',
                 content: 'For any who haven\'t seen the movie of the same title, it\'s highly recommended.\n' +
                 'I was worried the show wouldn\'t be able to capture the comedic genius of the movie, but i ' +
@@ -363,7 +356,6 @@ export const movies = [
         description: 'A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled ' + 
         'by a bear and left for dead by members of his own hunting team.',
         rating: '76',
-        ratingDescription: 'Excellent',
         reviewsCount: 1872,
         directors: ['Alejandro G. Iñárritu'],
         starring: ['Leonardo DiCaprio', 'Tom Hardy', 'Will Poulter'],
@@ -377,14 +369,14 @@ export const movies = [
             {
                 id: 'b4260d3b-b664-4647-a43d-5f6865e25fc7',
                 author: 'ated-33034',
-                rating: '86',
+                rating: '8',
                 date: '7 September 2021',
                 content: 'Minimal Speaking. Visuals tell the story. Hardy is just as good as DiCaprio in this.'
             },
             {
                 id: '86baf0e9-17b2-4ab5-a246-894156b71899',
                 author: 'bkoganbing',
-                rating: '89',
+                rating: '8',
                 date: '8 August 2016',
                 content: 'A favorite era of mine for film stories has always been the mountain man era in the ' +
                 'American west. No white people in great numbers, just single shot weapons, they were the ones ' +
@@ -407,7 +399,6 @@ export const movies = [
         description: 'Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote island in order ' + 
         'to investigate the disappearance of a patient, where Teddy uncovers a shocking truth about the place.',
         rating: '63',
-        ratingDescription: 'Good',
         reviewsCount: 1649,
         directors: ['Martin Scorsese'],
         starring: ['Leonardo DiCaprio', 'Emily Mortimer', 'Mark Ruffalo'],
@@ -421,8 +412,8 @@ export const movies = [
             {
                 id: '34ef8fd4-c933-4f9e-be47-1085438ecb66',
                 author: 'jackgdemoss',
-                rating: '98',
-                date: '',
+                rating: '9',
+                date: '22 July 2019',
                 content: 'I originally saw this film when it came out but couldn\'t remember it well ' +
                 'enough to give it a rating or write a review, so a rewatch was in order. I viewed the ' +
                 'film through the lens of already knowing the plot twist, which made it a whole different ' +
@@ -432,7 +423,7 @@ export const movies = [
             {
                 id: 'fae438fc-9e2b-4dff-9f8e-6e794e93c58c',
                 author: 'MrGilgamesh',
-                rating: '100',
+                rating: '10',
                 date: '23 February 2020',
                 content: 'Visually beautiful, wonderfully acted, and relentlessly gripping, Shutter Island ' +
                 'is a brilliantly unrestrained psychological thriller that keeps its audience riveted ' +
@@ -452,7 +443,6 @@ export const movies = [
         description: 'The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner ' + 
         'bandits intertwine in four tales of violence and redemption.',
         rating: '95',
-        ratingDescription: 'Masterpiece',
         reviewsCount: 3664,
         directors: ['Quentin Tarantino'],
         starring: ['John Travolta', 'Uma Thurman', 'Samuel L. Jackson'],
@@ -466,14 +456,14 @@ export const movies = [
             {
                 id: '82e367ae-b8bc-4e7b-864c-1f2e80c4a421',
                 author: 'bevo-13678',
-                rating: '100',
+                rating: '10',
                 date: '30 March 2020',
                 content: 'I like the bit with the cheeseburger. It makes me want to go and get a cheeseburger'
             },
             {
                 id: 'c590c5eb-d42e-457a-9d11-f20af19c2aaa',
                 author: 'kylopod',
-                rating: '100',
+                rating: '10',
                 date: '17 November 2005',
                 content: 'One of the early scenes in "Pulp Fiction" features two hit-men discussing what a ' +
                 'Big Mac is called in other countries. Their dialogue is witty and entertaining, and it\'s ' +
@@ -500,7 +490,6 @@ export const movies = [
         'he cannot resist the cash left behind and takes it. The hunter becomes the hunted when a merciless killer ' + 
         'named Chigurh picks up his trail.',
         rating: '92',
-        ratingDescription: 'Excellent',
         reviewsCount: 2143,
         directors: ['Ethan Coen', 'Joel Coen'],
         starring: ['Tommy Lee Jones', 'Javier Bardem', 'Josh Brolin'],
@@ -514,7 +503,7 @@ export const movies = [
             {
                 id: '66d46034-5914-4ee4-b6d3-3d64cf66686c',
                 author: 'st-shot',
-                rating: '65',
+                rating: '6',
                 date: '22 November 2007',
                 content: 'The Coen brothers are on firmer and more familiar territory with this Texas noir ' +
                 'based on the Cormac Mc Carthy novel. Trailer park resident Llewellyn Moss stumbles upon the ' +
@@ -525,7 +514,7 @@ export const movies = [
             {
                 id: 'f434a704-d65a-478d-b11e-536cb55e9e79',
                 author: 'saytosandeep',
-                rating: '83',
+                rating: '8',
                 date: '13 October 2013',
                 content: 'No Country For Old Men. It\'s a near perfect western thriller gone somewhat ' +
                 'wrong in the end. Hero a hunter himself finds a bag full of money from a crime scene ' +
@@ -551,7 +540,6 @@ export const movies = [
         description: 'An alien invasion threatens the future of humanity. The catastrophic nightmare is depicted ' + 
         'through the eyes of one American family fighting for survival.',
         rating: '73',
-        ratingDescription: 'Good',
         reviewsCount: 3002,
         directors: ['Steven Spielberg'],
         starring: ['Tom Cruise', 'Dakota Fanning', 'Tim Robbins'],
@@ -565,7 +553,7 @@ export const movies = [
             {
                 id: '108e74d6-ab57-49f1-ae7d-b2355ca81cb0',
                 author: 'tiberijegrozni',
-                rating: '61',
+                rating: '6',
                 date: '30 November 2019',
                 content: 'I love the book and overall theme of the movie but Tom Cruise acting is annoying ' +
                 'which is probably because he had to work with 2 most annoying kid actors ever seen on the film. ' +
@@ -576,7 +564,7 @@ export const movies = [
             {
                 id: '646f24c6-a9e7-4392-b804-6046a374c038',
                 author: 'rrella',
-                rating: '75',
+                rating: '7',
                 date: '21 June 2022',
                 content: 'I feel like this movie is beyond underrated and gets voted down due to people not ' +
                 'liking how different it is from the novel. This is a great sci fi film. Looks great, well ' +
@@ -596,7 +584,6 @@ export const movies = [
         description: 'After a sudden attack on MI5, Johnny English, Britain\'s most confident, yet unintelligent ' + 
         'spy, becomes Britain\'s only spy.',
         rating: '51',
-        ratingDescription: 'Good',
         reviewsCount: 352,
         directors: ['Peter Howitt'],
         starring: ['Rowan Atkinson', 'John Malkovich', 'Natalie Imbruglia'],
@@ -618,7 +605,7 @@ export const movies = [
             {
                 id: '8a8690bb-d0b3-41f3-ae8e-ac701aea4e8c',
                 author: 'briancham1994',
-                rating: '84',
+                rating: '8',
                 date: '4 June 2020',
                 content: 'This film has a lot of physical comedy that works on a basic level, just like the ' +
                 'famous Mr. Bean series. All of these skits made my grandmother chuckle even though she does not ' +
@@ -638,7 +625,6 @@ export const movies = [
         description: 'Unscrupulous boxing promoters, violent bookmakers, a Russian gangster, incompetent amateur ' + 
         'robbers and supposedly Jewish jewelers fight to track down a priceless stolen diamond.',
         rating: '55',
-        ratingDescription: 'Good',
         reviewsCount: 945,
         directors: ['Guy Ritchie'],
         starring: ['Jason Statham', 'Brad Pitt', 'Stephen Graham'],
@@ -665,7 +651,7 @@ export const movies = [
             {
                 id: 'c23d98b2-3bb1-4c6b-9d81-bcfb57c8990c',
                 author: 'SnoopyStyle',
-                rating: '79',
+                rating: '7',
                 date: '29 April 2014',
                 content: 'Its filled with plenty of hilarious British dark humor. The story is interesting and is ' +
                 'filled with many great and memorable characters. Guy Ritchie\'s directing is amazing here. Just ' +
@@ -685,7 +671,6 @@ export const movies = [
         description: 'Two 12-year-olds, who live on an island, fall in love with each other and elope into the ' + 
         'wilderness. While people set out on a search mission, a violent storm approaching them catches their attention.',
         rating: '84',
-        ratingDescription: 'Excellent',
         reviewsCount: 510,
         directors: ['Wes Anderson'],
         starring: ['Jared Gilman', 'Kara Hayward', 'Bruce Willis'],
@@ -699,7 +684,7 @@ export const movies = [
             {
                 id: '35f9cf61-3e36-44a3-af57-10c95464a540',
                 author: 'wisneskilife',
-                rating: '94',
+                rating: '9',
                 date: '24 December 2018',
                 content: 'Moonrise Kingdom is the most perfectly put together piece of art. For an hour and a half, ' +
                 'there\'s never a dull or slow moment. Each character is interesting whether you love or hate them. ' +
@@ -710,7 +695,7 @@ export const movies = [
             {
                 id: '33c71bb8-ee47-4697-aaf2-007b489e5bb4',
                 author: 'kelvinselimor',
-                rating: '80',
+                rating: '8',
                 date: '20 September 2023',
                 content: 'Moonrise Kingdom. A fabulous adventure. Insanely beautiful picture! For the first time I ' +
                 'was watching a film by Wes Anderson, and I was very impressed by its features, as I later found out, ' +
@@ -735,7 +720,6 @@ export const movies = [
         description: 'True story of Heinrich Harrer, an Austrian mountain climber who became friends with ' + 
         'the Dalai Lama at the time of China\'s takeover of Tibet.',
         rating: '55',
-        ratingDescription: 'Good',
         reviewsCount: 191,
         directors: ['Jean-Jacques Annaud'],
         starring: ['Brad Pitt', 'David Thewlis', 'BD Wong'],
@@ -749,7 +733,7 @@ export const movies = [
             {
                 id: '5b735275-5eae-4e91-8d62-10b59b7a18ef',
                 author: 'benxrichardson',
-                rating: '52',
+                rating: '5',
                 date: '17 October 2021',
                 content: 'Although Seven Years in Tibet certainly wasn\'t a short movie, it felt rushed. ' +
                 'This is an epic story which requires a slow build.\nBrad Pitt is just awful in this movie. ' +
@@ -760,7 +744,7 @@ export const movies = [
             {
                 id: '9f7a23f6-f208-4e0c-971c-e6a0b01a74da',
                 author: 'ahsend',
-                rating: '25',
+                rating: '2',
                 date: '26 February 2021',
                 content: 'I found Brad Pitt to be an absolute miscast. The story itself is very boring. ' +
                 'The accent of the main character is horrid.'
@@ -779,7 +763,6 @@ export const movies = [
         description: 'A father and son go on the run, pursued by the government and a cult drawn to the ' + 
         'child\'s special powers.',
         rating: '76',
-        ratingDescription: 'Excellent',
         reviewsCount: 340,
         directors: ['Jeff Nichols'],
         starring: ['Michael Shannon', 'Joel Edgerton', 'Kirsten Dunst'],
@@ -793,7 +776,7 @@ export const movies = [
             {
                 id: '5fb38447-16c9-4413-8ce8-bd06205ea7a6',
                 author: 'cliftonofun',
-                rating: '60',
+                rating: '6',
                 date: '27 December 2017',
                 content: 'Nichols is a gifted filmmaker. Both "Take Shelter" and "Mud" were special movies, ' +
                 'stories that allowed complex characters to be sucked into intense drama within real settings. ' +
@@ -805,7 +788,7 @@ export const movies = [
             {
                 id: '96381036-b316-4bd4-aabe-e5368fa26443',
                 author: 'mardalsfossen01',
-                rating: '66',
+                rating: '6',
                 date: '6 January 2020',
                 content: 'I really enjoyed most of the movie thanks to the mystery factor, the actors who ' +
                 'all play well - may it be the main or the supporting roles or the almost flawless production.\n' +
@@ -825,7 +808,6 @@ export const movies = [
         description: 'A year after their father\'s funeral, three brothers travel across India by train ' + 
         'in an attempt to bond with each other.',
         rating: '67',
-        ratingDescription: 'Good',
         reviewsCount: 361,
         directors: ['Wes Anderson'],
         starring: ['Owen Wilson', 'Adrien Brody', 'Jason Schwartzman'],
@@ -839,7 +821,7 @@ export const movies = [
             {
                 id: '8f5fd39f-5756-4e27-b90b-d17457f9e666',
                 author: 'UniqueParticle',
-                rating: '91',
+                rating: '9',
                 date: '4 January 2020',
                 content: 'A lovely electrifying journey of 3 friends that is beautifully done, incredible ' +
                 'acting and artsy style to everything! Wes Anderson has such a magic touch of glorious vision; ' +
@@ -849,7 +831,7 @@ export const movies = [
             {
                 id: '4c95e34a-9596-48e0-bbff-862be7815074',
                 author: 'cherold',
-                rating: '48',
+                rating: '4',
                 date: '6 January 2009',
                 content: 'In terms of Wes Anderson, I thought the Royal Tenenbaums was great and Rushmore and ' +
                 'Life Aquatic were at least intriguing, but The Darjeeling Limited is a pointless, shapeless ' +
@@ -874,7 +856,6 @@ export const movies = [
         description: 'After Queen Elizabeth I commands him not to grow old, a young nobleman struggles ' + 
         'with love and his place in the world.',
         rating: '75',
-        ratingDescription: 'Excellent',
         reviewsCount: 102,
         directors: ['Sally Potter'],
         starring: ['Tilda Swinton', 'Billy Zane', 'Quentin Crisp'],
@@ -888,7 +869,7 @@ export const movies = [
             {
                 id: 'ff9392fc-81cc-4ffd-a8df-dae9e1673446',
                 author: '=G=',
-                rating: '80',
+                rating: '8',
                 date: '2 February 2001',
                 content: '"Orlando" is a curiously ravishing series of essays built around an the title ' +
                 'character\'s travel through four centuries and two genders. The film\'s critical acclaim ' +
@@ -900,7 +881,7 @@ export const movies = [
             {
                 id: '42b256ea-0b54-4be2-85c2-52c8af1b91a7',
                 author: 'huluvu38',
-                rating: '100',
+                rating: '10',
                 date: '1 August 2004',
                 content: 'Simply put one of the best movies I have ever seen. The cast is amazing and deliver ' +
                 'in their performances, the stunning visuals and beautiful music combine to create a dreamy ' +
@@ -916,7 +897,7 @@ export const movies = [
     {
         id: 'cf28f87b-59b9-477f-bca8-a5d3b40db2c8',
         title: 'Mindhunter',
-        runTime: '1h / episode',
+        runTime: '1h',
         genres: ['Drama', 'Crime', 'Mystery'],
         year: '2017-2019',
         background: '/img/bg-mindhunter.jpg',
@@ -925,7 +906,6 @@ export const movies = [
         description: 'In the late 1970s, two FBI agents broaden the realm of criminal science by ' + 
         'investigating the psychology behind murder and end up getting too close to real-life monsters.',
         rating: '-',
-        ratingDescription: 'Рейтинг отсутствует',
         reviewsCount: 988,
         directors: ['Joe Penhall'],
         starring: ['Jonathan Groff', 'Holt McCallany', 'Anna Torv'],
@@ -939,7 +919,7 @@ export const movies = [
             {
                 id: '47bcc708-1309-4e28-b02f-1e746b6d65aa',
                 author: 'Supermanfan-13',
-                rating: '90',
+                rating: '9',
                 date: '28 July 2020',
                 content: 'Mindhunter is one of the better shows I\'ve seen in some time! I\'ve read ' +
                 'some people think it gets slow at times but that\'s only because they\'re building the ' +
@@ -949,9 +929,115 @@ export const movies = [
             {
                 id: '03970ca5-929e-442b-90af-1c7d58ccb163',
                 author: 'jack_o_hasanov_imdb',
-                rating: '91',
+                rating: '9',
                 date: '9 August 2021',
                 content: 'It was one of the best series I\'ve ever watched.\nWhy didn\'t they continue?'
+            }
+        ]
+    },
+    {
+        id: '8224c643-ac24-43a9-b545-86e275784791',
+        title: 'The Conjuring',
+        runTime: '1h 52m',
+        genres: ['Horror', 'Mystery', 'Thriller'],
+        year: '2013',
+        background: '/img/bg-conjuring.jpg',
+        poster: '/img/conjuring.jpg',
+        pagePoster: '/img/page-conjuring.jpg',
+        description: 'Paranormal investigators Ed and Lorraine Warren work to help a family terrorized ' +
+        'by a dark presence in their farmhouse.',
+        rating: '68',
+        reviewsCount: 1329,
+        directors: ['James Wan'],
+        starring: ['Patrick Wilson', 'Vera Farmiga', 'Ron Livingston'],
+        previews: [
+            {
+                path: '/video/preview-conjuring.mp4',
+                type: 'video/mp4'
+            }
+        ],
+        reviews: [
+            {
+                id: 'c18efe71-3d6c-4a41-a7d1-6aba88716279',
+                author: '0U',
+                rating: '9',
+                date: '13 February 2020',
+                content: '"The Conjuring" is one of the most thrilling horror film to have come out in ' +
+                'recent times. It is up there with "Sinister" as one of the scariest films I have watched. ' +
+                'Since it\'s based off of "true events", it makes it even more interesting. I can\'t quite ' +
+                'give it a full 10 star rating because it does have quite a few jump scares, but at least ' +
+                'a good portion of those jump scares add to the atmosphere of this movie. If you are a first ' +
+                'time watcher of this movie, it will certainly disturb you for a while. It doesn\'t stick ' +
+                'with me like "Sinister" does long after, but The Conjuring is a fun watch and I always love ' +
+                'coming back for a rewatch every now and then.'
+            },
+            {
+                id: 'f03175e3-b7b1-4c34-87af-70fbc1ca870f',
+                author: 'Sleepin_Dragon',
+                rating: '9',
+                date: '7 January 2021',
+                content: 'It\'s several years since this film was released, and I have to say that none of ' +
+                'the shine has come off it, the quality is still very much there, the film is a classic. As a ' +
+                'horror it packs in some real scares, but there is so much more to it, it has tension, a story, ' +
+                'and some real intrigue, possibly because of the fact that it was inspired by real life events.\n\n' +
+                'Several films have followed, sequels and spin offs, but none of them come close to this, the only ' +
+                'Horror film for many years to actually give me a few scares.\n\nMany of the scares are so memorable, ' +
+                'because they are so well executed, they got the balance just right.\n\nIncredibly well acted, the ' +
+                'performances are one of the film\'s best assets, but there are many besides.\n\nI\'d have moved! ' +
+                'It\'s a classic, 9/10.'
+            }
+        ]
+    },
+    {
+        id: 'dd3a6d7b-2208-4b7e-b1bf-5fb3ae5d04f2',
+        title: 'Bram Stoker\'s Dracula',
+        runTime: '2h 8m',
+        genres: ['Drama', 'Fantasy', 'Horror'],
+        year: '1992',
+        background: '/img/bg-dracula.jpg',
+        poster: '/img/dracula.jpg',
+        pagePoster: '/img/page-dracula.jpg',
+        description: 'The centuries old vampire Count Dracula comes to England to seduce his barrister Jonathan Harker\'s ' +
+        'fiancée Mina Murray and inflict havoc in the foreign land.',
+        rating: '57',
+        reviewsCount: 893,
+        directors: ['Francis Ford Coppola'],
+        starring: ['Gary Oldman', 'Winona Ryder', 'Anthony Hopkins'],
+        previews: [
+            {
+                path: '/video/preview-dracula.mp4',
+                type: 'video/mp4'
+            }
+        ],
+        reviews: [
+            {
+                id: 'ded2e863-93ee-4fd1-b730-75b0963f115f',
+                author: 'Moonlyn',
+                rating: '10',
+                date: '14 February 2005',
+                content: 'This is the best rendition of Dracula ever captured on film. Gary Oldman\'s dark ' +
+                'and sensual personae outshines any other vampire who ever dare put on a cape. To me Gary Oldman ' +
+                'is the most talented and underrated actor ever. He becomes who he is playing, however in this role... ' +
+                'Dracula became him... Oldman set the bar so high it is untouchable even to Bela Lugosi. Winona Ryder\'s ' +
+                'delicateness suited the role of Mina/Elisabeta nicely and Keanu Reeves played the unsuspecting and ' +
+                'naive Jonathan with satisfaction. However the whole movie comes together because of Gary Oldman\'s ' +
+                'intoxicating essence. He draws the viewers into his darkness and passion and guides them through ' +
+                'until the end. This film is drastically romantic and hauntingly captivating- just like a real Dracula ' +
+                'movie should be. The cinematography deserved Oldman\'s phenomenal performance and perfectly created a ' +
+                'true vampire realm. Francis Ford Coppola is brilliant. This is the spirit of the vampire.'
+            },
+            {
+                id: 'dfa7f031-d1be-4c81-a8fc-8a5d8931fa53',
+                author: 'Sleepin_Dragon',
+                rating: '9',
+                date: '16 January 2020',
+                content: 'I have seen multiple versions of Dracula, but none compare to 1992\'s version starring Gary ' +
+                'Oldman, the definitive Count Dracula in my opinion. This film is lavish, decadent and wonderfully vivid. ' +
+                'It captured the gothic spirit of the novel, it\'s deep, romantic, and mixed with tender and violent ' +
+                'moments. The visuals to this day are exquisite, the costumes, sets and scenes of Victorian England are ' +
+                'superb.\n\nOldman is incredible, but the supporting cast of Reeves, Hopkins and Ryder are terrific, ' +
+                'Winona Ryder\'s delicate character is superb. The accompanying soundtrack was also fantastic, great songs ' +
+                'from Annie Lennox.\n\nA true classic. 9/10'
             }
         ]
     }
