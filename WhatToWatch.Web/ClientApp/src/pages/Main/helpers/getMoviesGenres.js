@@ -1,4 +1,4 @@
-import { ALL_GENRES } from '../constants/allGenresElement.js';
+import { ALL_GENRES } from '../constants/constants.js';
 
 export const getMoviesGenres = (movies) => {
     const moviesGenres = [];
